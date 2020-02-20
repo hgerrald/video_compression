@@ -34,18 +34,6 @@ def createFloatArray(image_num):
 
 
 def writeImage(height, width):
-    # Read in the image data from image_data.txt
-    f = open("image_data.txt", "rb")
-    #Create Datasets From Image For extrapolation
-    intArray = []
-    intArray = np.zeros((height,width,3),dtype = np.int32)
-    for y in range(height):
-        for x in range(width):
-            intArray[y][x][0] = float(f.read(10))
-            # intArray[y][x][1] = f.read(10)
-            # intArray[y][x][2] = f.read(10)
-
-
-    # Write the image data
-    # newImage = Image.fromarray((result).astype(np.uint8),'RGB')
-    # newImage.save("output" + IdString + ".jpeg","JPEG")
+    result = pressio.io_data_to_numpy(decompressed_data)
+    newImage = Image.fromarray((result).astype(np.uint8),'RGB')
+    newImage.save("output" + IdString + ".jpeg","JPEG")

@@ -83,11 +83,6 @@ for imgs in Dataset:
 
     input_data = pressio.io_data_from_numpy(floatArray)
 
-
-    num_bytes = pressio.data_get_bytes(input_data)
-    start = pressio.data_ptr(input_data, None)
-    copied_data = pressio.data_select(input_data, (size_t*)start, 0, None, None)
-
     compressed_data = pressio.data_new_empty(pressio.byte_dtype, pressio.vector_uint64_t())
 
     dims = pressio.vector_uint64_t([height,width,3])
@@ -95,7 +90,7 @@ for imgs in Dataset:
     decompressed_data = pressio.data_new_empty(pressio.double_dtype, dims)
 
 #compress data with selected compressor
-    pressio.compressor_compress(compressor, copied_data, compressed_data)
+    pressio.compressor_compress(compressor, input_data, compressed_data)
 #decompress data with selected compressor
     pressio.compressor_decompress(compressor, compressed_data, decompressed_data)
 #get metric results for compression
@@ -119,7 +114,7 @@ for imgs in Dataset:
 #     #print(OutputID,"      ","%.2f" % pressio.double_value(compression_ratio), "           ",pressio.uint32_value(compressed_size), "       ",pressio.uint32_value(uncompressed_size))
 #
 #
-#     result = pressio.io_data_to_numpy(decompressed_data)
+    result = pressio.io_data_to_numpy(decompressed_data)
 #
 #     Sum += pressio.double_value(compression_ratio)
 #
@@ -128,8 +123,8 @@ for imgs in Dataset:
 #     for id in OutputID:
 #             IdString += id
 #
-#     newImage = Image.fromarray((result).astype(np.uint8),'RGB')
-#     newImage.save("output" + IdString + ".jpeg","JPEG")
+    newImage = Image.fromarray((result).astype(np.uint8),'RGB')
+    newImage.save("output" + "0" + ".jpeg","JPEG")
 #
 #
 # average = Sum/Divisor

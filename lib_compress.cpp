@@ -202,10 +202,7 @@ int main(void)
 
 
   size_t dims[] = {iHeight, iWidth, 3};
-  struct pressio_data* input_data = pressio_data_new_move(pressio_double_dtype, data_array, 1, dims, pressio_data_libc_free_fn, NULL);
-  // //  call_python_write_image();
-     pressio_io_data_path_write(input_data, "results/result0.jpg");
-
+  struct pressio_data* input_data = pressio_data_new_move(pressio_double_dtype, data_array, 3, dims, pressio_data_libc_free_fn, NULL);
   struct pressio_data* compressed_data = pressio_data_new_empty(pressio_byte_dtype, 0, NULL);
   struct pressio_data* decompressed_data = pressio_data_new_empty(pressio_double_dtype, 3, dims);
 
@@ -248,7 +245,7 @@ int main(void)
   fclose(data);
 
 // //  call_python_write_image();
-//   pressio_io_data_path_write(input_data, "results/result0.jpg");
+   pressio_io_data_path_write(input_data, "results/result0.jpg");
 
 
 
