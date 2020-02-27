@@ -58,20 +58,26 @@ image = "imgs/image"+str(sys.argv[1])+".jpg"
 im = Image.open(image,'r')
 pix_vals = im.load()
 width,height = im.size
-height_2 = height // 2;
+height_2 = height // 5
+height_3 = height_2 * 2
 
 # Compress the top of the image
 dArray_top = createFloatArray(0, height_2, 0, width, pix_vals)
-dc1 = performCompression(50, dArray_top, 0, height_2, 0, width)
+dc1 = performCompression(8, dArray_top, 0, height_2, 0, width)
+
+# Compress the second layer
+dArray_middle = createFloatArray(height_2, height_3 ,0, width, pix_vals)
+dc2 = performCompression(20, dArray_middle, height_2, height_3, 0, width)
 
 # Compress the bottom of the image
-dArray_bottom = createFloatArray(height_2, height, 0, width, pix_vals)
-dc2 = performCompression(20, dArray_bottom, height_2, height, 0, width)
+dArray_bottom = createFloatArray(height_3, height, 0, width, pix_vals)
+dc3 = performCompression(50, dArray_bottom, height_3, height, 0, width)
 
 
 ## Write out the image
 result = pressio.io_data_to_numpy(dc1)
-result_2 = pressio.io_data_to_numpy(dc2)
-final = np.vstack((result, result_2))
+result_mid = pressio.io_data_to_numpy(dc2)
+result_2 = pressio.io_data_to_numpy(dc3)
+final = np.vstack((result, result_mid, result_2))
 newImage = Image.fromarray((final).astype(np.uint8),'RGB')
 newImage.save("output" + "0" + ".jpeg","JPEG")
