@@ -54,7 +54,7 @@ def performCompression(compress_rate, dataArray, height_start, height_end, width
 
 
 ### MAIN ###
-image = "imgs/image"+str(sys.argv[1])+".jpg"
+image = "base_images/image"+str(sys.argv[1])+".jpg"
 im = Image.open(image,'r')
 pix_vals = im.load()
 width,height = im.size
