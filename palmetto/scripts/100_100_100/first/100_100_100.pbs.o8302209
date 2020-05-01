@@ -1,0 +1,769 @@
+['person']
+{'model': {'min_input_size': 288, 'max_input_size': 480, 'anchors': [14, 32, 15, 43, 21, 42, 23, 65, 26, 43, 33, 53, 35, 80, 36, 41, 48, 68], 'labels': ['person']}, 'train': {'train_image_folder': '../results/3_layer/100_100_100/', 'train_annot_folder': 'base/35/train/annos/', 'cache_name': 'ped_data_base_0.pkl', 'train_times': 3, 'batch_size': 8, 'learning_rate': 0.0001, 'nb_epochs': 50, 'warmup_epochs': 3, 'ignore_thresh': 0.5, 'gpus': '0,1', 'grid_scales': [1, 1, 1], 'obj_scale': 5, 'noobj_scale': 1, 'xywh_scale': 1, 'class_scale': 1, 'tensorboard_dir': 'logs', 'saved_weights_name': 'models/base_0.h5', 'debug': True}, 'valid': {'valid_image_folder': '', 'valid_annot_folder': '', 'cache_name': '', 'valid_times': 1}}
+labsls: ['person']
+parsing voc annotation from cache!
+valid_annot_folder not exists. Spliting the trainining set.
+Seen labels: 	{'person': 697}
+
+Given labels: 	['person']
+
+Training on: 	['person']
+
+
+Training from: 	../results/3_layer/100_100_100/
+
+
+Loading pretrained weights.
+
+Epoch 1/50
+resizing:  320 320
+
+  1/108 [..............................] - ETA: 1:01:26 - loss: 11.2049 - yolo_layer_1_loss: 2.0782 - yolo_layer_2_loss: 4.4381 - yolo_layer_3_loss: 4.6885resizing:  416 416
+
+  2/108 [..............................] - ETA: 35:00 - loss: 11.6226 - yolo_layer_1_loss: 2.4403 - yolo_layer_2_loss: 4.2126 - yolo_layer_3_loss: 4.9696  
+  3/108 [..............................] - ETA: 26:08 - loss: 12.9208 - yolo_layer_1_loss: 2.9759 - yolo_layer_2_loss: 4.1992 - yolo_layer_3_loss: 5.7456
+  4/108 [>.............................] - ETA: 21:39 - loss: 14.0663 - yolo_layer_1_loss: 3.5975 - yolo_layer_2_loss: 4.6687 - yolo_layer_3_loss: 5.8001
+  5/108 [>.............................] - ETA: 18:56 - loss: 13.6441 - yolo_layer_1_loss: 3.6372 - yolo_layer_2_loss: 4.6373 - yolo_layer_3_loss: 5.3695resizing:  448 448
+
+  6/108 [>.............................] - ETA: 17:07 - loss: 13.3382 - yolo_layer_1_loss: 3.5618 - yolo_layer_2_loss: 4.4573 - yolo_layer_3_loss: 5.3191
+  7/108 [>.............................] - ETA: 15:46 - loss: 13.0001 - yolo_layer_1_loss: 3.4950 - yolo_layer_2_loss: 4.3066 - yolo_layer_3_loss: 5.1985
+  8/108 [=>............................] - ETA: 14:43 - loss: 13.2035 - yolo_layer_1_loss: 3.4012 - yolo_layer_2_loss: 4.4212 - yolo_layer_3_loss: 5.3811
+  9/108 [=>............................] - ETA: 13:37 - loss: 12.8273 - yolo_layer_1_loss: 3.2677 - yolo_layer_2_loss: 4.2188 - yolo_layer_3_loss: 5.3408
+ 10/108 [=>............................] - ETA: 12:44 - loss: 12.4869 - yolo_layer_1_loss: 3.0888 - yolo_layer_2_loss: 4.0950 - yolo_layer_3_loss: 5.3031
+ 11/108 [==>...........................] - ETA: 12:12 - loss: 12.5217 - yolo_layer_1_loss: 2.9752 - yolo_layer_2_loss: 4.0914 - yolo_layer_3_loss: 5.4552
+ 12/108 [==>...........................] - ETA: 11:46 - loss: 12.2910 - yolo_layer_1_loss: 2.8671 - yolo_layer_2_loss: 3.9096 - yolo_layer_3_loss: 5.5143
+ 13/108 [==>...........................] - ETA: 11:23 - loss: 12.1926 - yolo_layer_1_loss: 2.8199 - yolo_layer_2_loss: 3.9581 - yolo_layer_3_loss: 5.4147
+ 14/108 [==>...........................] - ETA: 11:03 - loss: 11.9295 - yolo_layer_1_loss: 2.7924 - yolo_layer_2_loss: 3.8504 - yolo_layer_3_loss: 5.2867
+ 15/108 [===>..........................] - ETA: 10:48 - loss: 11.9193 - yolo_layer_1_loss: 2.7431 - yolo_layer_2_loss: 3.8173 - yolo_layer_3_loss: 5.3588resizing:  384 384
+
+ 16/108 [===>..........................] - ETA: 10:35 - loss: 11.8608 - yolo_layer_1_loss: 2.7427 - yolo_layer_2_loss: 3.7224 - yolo_layer_3_loss: 5.3957
+ 17/108 [===>..........................] - ETA: 10:22 - loss: 12.0774 - yolo_layer_1_loss: 2.7896 - yolo_layer_2_loss: 3.8698 - yolo_layer_3_loss: 5.4180
+ 18/108 [====>.........................] - ETA: 10:10 - loss: 12.1771 - yolo_layer_1_loss: 2.8173 - yolo_layer_2_loss: 3.8447 - yolo_layer_3_loss: 5.5151
+ 19/108 [====>.........................] - ETA: 9:59 - loss: 12.2693 - yolo_layer_1_loss: 2.8564 - yolo_layer_2_loss: 3.8644 - yolo_layer_3_loss: 5.5486 
+ 20/108 [====>.........................] - ETA: 9:49 - loss: 12.1941 - yolo_layer_1_loss: 2.8270 - yolo_layer_2_loss: 3.8229 - yolo_layer_3_loss: 5.5442
+ 21/108 [====>.........................] - ETA: 9:39 - loss: 12.2121 - yolo_layer_1_loss: 2.8063 - yolo_layer_2_loss: 3.8959 - yolo_layer_3_loss: 5.5098
+ 22/108 [=====>........................] - ETA: 9:29 - loss: 12.1973 - yolo_layer_1_loss: 2.7983 - yolo_layer_2_loss: 3.8476 - yolo_layer_3_loss: 5.5514
+ 23/108 [=====>........................] - ETA: 9:20 - loss: 12.5774 - yolo_layer_1_loss: 2.9260 - yolo_layer_2_loss: 4.0134 - yolo_layer_3_loss: 5.6380
+ 24/108 [=====>........................] - ETA: 9:11 - loss: 12.5671 - yolo_layer_1_loss: 2.9136 - yolo_layer_2_loss: 4.0996 - yolo_layer_3_loss: 5.5539
+ 25/108 [=====>........................] - ETA: 8:58 - loss: 12.6264 - yolo_layer_1_loss: 2.8859 - yolo_layer_2_loss: 4.1108 - yolo_layer_3_loss: 5.6297
+ 26/108 [======>.......................] - ETA: 8:46 - loss: 12.8035 - yolo_layer_1_loss: 2.9709 - yolo_layer_2_loss: 4.0760 - yolo_layer_3_loss: 5.7566
+ 27/108 [======>.......................] - ETA: 8:34 - loss: 12.8293 - yolo_layer_1_loss: 3.0212 - yolo_layer_2_loss: 4.0849 - yolo_layer_3_loss: 5.7232
+ 28/108 [======>.......................] - ETA: 8:22 - loss: 12.6670 - yolo_layer_1_loss: 3.0096 - yolo_layer_2_loss: 4.0384 - yolo_layer_3_loss: 5.6189
+ 29/108 [=======>......................] - ETA: 8:11 - loss: 12.6349 - yolo_layer_1_loss: 2.9609 - yolo_layer_2_loss: 3.9889 - yolo_layer_3_loss: 5.6850
+ 30/108 [=======>......................] - ETA: 8:01 - loss: 12.6833 - yolo_layer_1_loss: 2.9249 - yolo_layer_2_loss: 4.0427 - yolo_layer_3_loss: 5.7157
+ 31/108 [=======>......................] - ETA: 7:50 - loss: 12.6764 - yolo_layer_1_loss: 2.8658 - yolo_layer_2_loss: 3.9920 - yolo_layer_3_loss: 5.8185
+ 32/108 [=======>......................] - ETA: 7:41 - loss: 12.6521 - yolo_layer_1_loss: 2.8488 - yolo_layer_2_loss: 3.9574 - yolo_layer_3_loss: 5.8459
+ 33/108 [========>.....................] - ETA: 7:31 - loss: 12.8072 - yolo_layer_1_loss: 2.9598 - yolo_layer_2_loss: 4.0068 - yolo_layer_3_loss: 5.8406
+ 34/108 [========>.....................] - ETA: 7:22 - loss: 12.7906 - yolo_layer_1_loss: 2.9403 - yolo_layer_2_loss: 3.9539 - yolo_layer_3_loss: 5.8963
+ 35/108 [========>.....................] - ETA: 7:13 - loss: 12.8208 - yolo_layer_1_loss: 2.9026 - yolo_layer_2_loss: 3.9324 - yolo_layer_3_loss: 5.9858resizing:  448 448
+
+ 36/108 [=========>....................] - ETA: 7:05 - loss: 12.7530 - yolo_layer_1_loss: 2.8774 - yolo_layer_2_loss: 3.9112 - yolo_layer_3_loss: 5.9644
+ 37/108 [=========>....................] - ETA: 6:56 - loss: 12.6471 - yolo_layer_1_loss: 2.8479 - yolo_layer_2_loss: 3.8826 - yolo_layer_3_loss: 5.9167
+ 38/108 [=========>....................] - ETA: 6:50 - loss: 12.6445 - yolo_layer_1_loss: 2.8217 - yolo_layer_2_loss: 3.8869 - yolo_layer_3_loss: 5.9359
+ 39/108 [=========>....................] - ETA: 6:42 - loss: 12.6883 - yolo_layer_1_loss: 2.8919 - yolo_layer_2_loss: 3.8668 - yolo_layer_3_loss: 5.9296
+ 40/108 [==========>...................] - ETA: 6:34 - loss: 12.6848 - yolo_layer_1_loss: 2.9192 - yolo_layer_2_loss: 3.8532 - yolo_layer_3_loss: 5.9124
+ 41/108 [==========>...................] - ETA: 6:28 - loss: 12.7773 - yolo_layer_1_loss: 2.9819 - yolo_layer_2_loss: 3.8535 - yolo_layer_3_loss: 5.9419
+ 42/108 [==========>...................] - ETA: 6:22 - loss: 12.8202 - yolo_layer_1_loss: 3.0131 - yolo_layer_2_loss: 3.8848 - yolo_layer_3_loss: 5.9223
+ 43/108 [==========>...................] - ETA: 6:16 - loss: 12.8019 - yolo_layer_1_loss: 3.0199 - yolo_layer_2_loss: 3.8733 - yolo_layer_3_loss: 5.9087
+ 44/108 [===========>..................] - ETA: 6:11 - loss: 12.8269 - yolo_layer_1_loss: 3.0486 - yolo_layer_2_loss: 3.9153 - yolo_layer_3_loss: 5.8629
+ 45/108 [===========>..................] - ETA: 6:05 - loss: 12.8749 - yolo_layer_1_loss: 3.0950 - yolo_layer_2_loss: 3.9396 - yolo_layer_3_loss: 5.8403resizing:  416 416
+
+ 46/108 [===========>..................] - ETA: 5:59 - loss: 12.9437 - yolo_layer_1_loss: 3.0929 - yolo_layer_2_loss: 3.9962 - yolo_layer_3_loss: 5.8545
+ 47/108 [============>.................] - ETA: 5:54 - loss: 12.9407 - yolo_layer_1_loss: 3.0929 - yolo_layer_2_loss: 3.9713 - yolo_layer_3_loss: 5.8765
+ 48/108 [============>.................] - ETA: 5:48 - loss: 12.9685 - yolo_layer_1_loss: 3.1040 - yolo_layer_2_loss: 4.0184 - yolo_layer_3_loss: 5.8462
+ 49/108 [============>.................] - ETA: 5:42 - loss: 12.9270 - yolo_layer_1_loss: 3.0950 - yolo_layer_2_loss: 3.9781 - yolo_layer_3_loss: 5.8540
+ 50/108 [============>.................] - ETA: 5:36 - loss: 12.9762 - yolo_layer_1_loss: 3.1264 - yolo_layer_2_loss: 4.0422 - yolo_layer_3_loss: 5.8075
+ 51/108 [=============>................] - ETA: 5:30 - loss: 12.9107 - yolo_layer_1_loss: 3.1001 - yolo_layer_2_loss: 4.0189 - yolo_layer_3_loss: 5.7916
+ 52/108 [=============>................] - ETA: 5:25 - loss: 12.8939 - yolo_layer_1_loss: 3.1379 - yolo_layer_2_loss: 3.9954 - yolo_layer_3_loss: 5.7606
+ 53/108 [=============>................] - ETA: 5:19 - loss: 12.9625 - yolo_layer_1_loss: 3.1842 - yolo_layer_2_loss: 3.9993 - yolo_layer_3_loss: 5.7790
+ 54/108 [==============>...............] - ETA: 5:13 - loss: 12.9626 - yolo_layer_1_loss: 3.2109 - yolo_layer_2_loss: 3.9831 - yolo_layer_3_loss: 5.7686
+ 55/108 [==============>...............] - ETA: 5:07 - loss: 12.8831 - yolo_layer_1_loss: 3.1949 - yolo_layer_2_loss: 3.9467 - yolo_layer_3_loss: 5.7415resizing:  384 384
+
+ 56/108 [==============>...............] - ETA: 5:00 - loss: 12.8539 - yolo_layer_1_loss: 3.1783 - yolo_layer_2_loss: 3.9408 - yolo_layer_3_loss: 5.7348resizing:  480 480
+
+ 57/108 [==============>...............] - ETA: 4:54 - loss: 12.8430 - yolo_layer_1_loss: 3.1670 - yolo_layer_2_loss: 3.9268 - yolo_layer_3_loss: 5.7493
+ 58/108 [===============>..............] - ETA: 4:48 - loss: 12.8775 - yolo_layer_1_loss: 3.1521 - yolo_layer_2_loss: 3.9439 - yolo_layer_3_loss: 5.7816
+ 59/108 [===============>..............] - ETA: 4:41 - loss: 12.9026 - yolo_layer_1_loss: 3.1586 - yolo_layer_2_loss: 3.9480 - yolo_layer_3_loss: 5.7961
+ 60/108 [===============>..............] - ETA: 4:35 - loss: 12.9988 - yolo_layer_1_loss: 3.1740 - yolo_layer_2_loss: 3.9785 - yolo_layer_3_loss: 5.8463
+ 61/108 [===============>..............] - ETA: 4:29 - loss: 13.0131 - yolo_layer_1_loss: 3.1591 - yolo_layer_2_loss: 3.9698 - yolo_layer_3_loss: 5.8842
+ 62/108 [================>.............] - ETA: 4:23 - loss: 12.9756 - yolo_layer_1_loss: 3.1520 - yolo_layer_2_loss: 3.9680 - yolo_layer_3_loss: 5.8555
+ 63/108 [================>.............] - ETA: 4:17 - loss: 12.9805 - yolo_layer_1_loss: 3.1545 - yolo_layer_2_loss: 4.0027 - yolo_layer_3_loss: 5.8233
+ 64/108 [================>.............] - ETA: 4:10 - loss: 13.0605 - yolo_layer_1_loss: 3.2015 - yolo_layer_2_loss: 4.0167 - yolo_layer_3_loss: 5.8423
+ 65/108 [=================>............] - ETA: 4:04 - loss: 13.0183 - yolo_layer_1_loss: 3.1933 - yolo_layer_2_loss: 4.0060 - yolo_layer_3_loss: 5.8190
+ 66/108 [=================>............] - ETA: 3:59 - loss: 13.0465 - yolo_layer_1_loss: 3.2067 - yolo_layer_2_loss: 3.9985 - yolo_layer_3_loss: 5.8412
+ 67/108 [=================>............] - ETA: 3:54 - loss: 13.0778 - yolo_layer_1_loss: 3.2565 - yolo_layer_2_loss: 4.0175 - yolo_layer_3_loss: 5.8038
+ 68/108 [=================>............] - ETA: 3:49 - loss: 13.0517 - yolo_layer_1_loss: 3.2484 - yolo_layer_2_loss: 4.0055 - yolo_layer_3_loss: 5.7978
+ 69/108 [==================>...........] - ETA: 3:43 - loss: 13.0406 - yolo_layer_1_loss: 3.2659 - yolo_layer_2_loss: 4.0002 - yolo_layer_3_loss: 5.7745
+ 70/108 [==================>...........] - ETA: 3:38 - loss: 13.0681 - yolo_layer_1_loss: 3.2684 - yolo_layer_2_loss: 4.0092 - yolo_layer_3_loss: 5.7906
+ 71/108 [==================>...........] - ETA: 3:33 - loss: 13.0699 - yolo_layer_1_loss: 3.2817 - yolo_layer_2_loss: 4.0105 - yolo_layer_3_loss: 5.7776
+ 72/108 [===================>..........] - ETA: 3:27 - loss: 13.0342 - yolo_layer_1_loss: 3.2870 - yolo_layer_2_loss: 4.0003 - yolo_layer_3_loss: 5.7469
+ 73/108 [===================>..........] - ETA: 3:22 - loss: 13.0322 - yolo_layer_1_loss: 3.3125 - yolo_layer_2_loss: 3.9978 - yolo_layer_3_loss: 5.7218
+ 74/108 [===================>..........] - ETA: 3:17 - loss: 13.0298 - yolo_layer_1_loss: 3.3232 - yolo_layer_2_loss: 3.9995 - yolo_layer_3_loss: 5.7072
+ 75/108 [===================>..........] - ETA: 3:11 - loss: 13.0019 - yolo_layer_1_loss: 3.3085 - yolo_layer_2_loss: 3.9847 - yolo_layer_3_loss: 5.7086
+ 76/108 [====================>.........] - ETA: 3:05 - loss: 13.0139 - yolo_layer_1_loss: 3.3435 - yolo_layer_2_loss: 3.9764 - yolo_layer_3_loss: 5.6939
+ 77/108 [====================>.........] - ETA: 3:00 - loss: 13.0203 - yolo_layer_1_loss: 3.3356 - yolo_layer_2_loss: 3.9904 - yolo_layer_3_loss: 5.6943resizing:  320 320
+
+ 78/108 [====================>.........] - ETA: 2:54 - loss: 13.0123 - yolo_layer_1_loss: 3.3359 - yolo_layer_2_loss: 3.9730 - yolo_layer_3_loss: 5.7034
+ 79/108 [====================>.........] - ETA: 2:49 - loss: 13.0573 - yolo_layer_1_loss: 3.3899 - yolo_layer_2_loss: 3.9721 - yolo_layer_3_loss: 5.6953
+ 80/108 [=====================>........] - ETA: 2:43 - loss: 13.0997 - yolo_layer_1_loss: 3.4068 - yolo_layer_2_loss: 3.9799 - yolo_layer_3_loss: 5.7130
+ 81/108 [=====================>........] - ETA: 2:38 - loss: 13.0805 - yolo_layer_1_loss: 3.3977 - yolo_layer_2_loss: 3.9657 - yolo_layer_3_loss: 5.7171
+ 82/108 [=====================>........] - ETA: 2:32 - loss: 13.1152 - yolo_layer_1_loss: 3.4018 - yolo_layer_2_loss: 3.9610 - yolo_layer_3_loss: 5.7523
+ 83/108 [======================>.......] - ETA: 2:26 - loss: 13.1390 - yolo_layer_1_loss: 3.4334 - yolo_layer_2_loss: 3.9864 - yolo_layer_3_loss: 5.7193
+ 84/108 [======================>.......] - ETA: 2:20 - loss: 13.1189 - yolo_layer_1_loss: 3.4216 - yolo_layer_2_loss: 3.9867 - yolo_layer_3_loss: 5.7106
+ 85/108 [======================>.......] - ETA: 2:15 - loss: 13.1589 - yolo_layer_1_loss: 3.4182 - yolo_layer_2_loss: 4.0183 - yolo_layer_3_loss: 5.7224
+ 86/108 [======================>.......] - ETA: 2:09 - loss: 13.1783 - yolo_layer_1_loss: 3.4158 - yolo_layer_2_loss: 4.0278 - yolo_layer_3_loss: 5.7347
+ 87/108 [=======================>......] - ETA: 2:03 - loss: 13.1758 - yolo_layer_1_loss: 3.3959 - yolo_layer_2_loss: 4.0290 - yolo_layer_3_loss: 5.7508
+ 88/108 [=======================>......] - ETA: 1:56 - loss: 13.1740 - yolo_layer_1_loss: 3.3969 - yolo_layer_2_loss: 4.0149 - yolo_layer_3_loss: 5.7622
+ 89/108 [=======================>......] - ETA: 1:50 - loss: 13.1349 - yolo_layer_1_loss: 3.3768 - yolo_layer_2_loss: 3.9983 - yolo_layer_3_loss: 5.7598resizing:  352 352
+
+ 90/108 [========================>.....] - ETA: 1:44 - loss: 13.1168 - yolo_layer_1_loss: 3.3582 - yolo_layer_2_loss: 3.9868 - yolo_layer_3_loss: 5.7718resizing:  448 448
+
+ 91/108 [========================>.....] - ETA: 1:38 - loss: 13.1039 - yolo_layer_1_loss: 3.3566 - yolo_layer_2_loss: 3.9733 - yolo_layer_3_loss: 5.7740
+ 92/108 [========================>.....] - ETA: 1:31 - loss: 13.0892 - yolo_layer_1_loss: 3.3358 - yolo_layer_2_loss: 3.9844 - yolo_layer_3_loss: 5.7690
+ 93/108 [========================>.....] - ETA: 1:25 - loss: 13.0734 - yolo_layer_1_loss: 3.3213 - yolo_layer_2_loss: 3.9899 - yolo_layer_3_loss: 5.7621
+ 94/108 [=========================>....] - ETA: 1:19 - loss: 13.0568 - yolo_layer_1_loss: 3.2966 - yolo_layer_2_loss: 3.9828 - yolo_layer_3_loss: 5.7774
+ 95/108 [=========================>....] - ETA: 1:13 - loss: 13.0160 - yolo_layer_1_loss: 3.2837 - yolo_layer_2_loss: 3.9618 - yolo_layer_3_loss: 5.7705
+ 96/108 [=========================>....] - ETA: 1:07 - loss: 13.0147 - yolo_layer_1_loss: 3.2857 - yolo_layer_2_loss: 3.9672 - yolo_layer_3_loss: 5.7618
+ 97/108 [=========================>....] - ETA: 1:02 - loss: 13.0564 - yolo_layer_1_loss: 3.3060 - yolo_layer_2_loss: 3.9834 - yolo_layer_3_loss: 5.7669resizing:  384 384
+
+ 98/108 [==========================>...] - ETA: 56s - loss: 13.0090 - yolo_layer_1_loss: 3.2946 - yolo_layer_2_loss: 3.9656 - yolo_layer_3_loss: 5.7488 
+ 99/108 [==========================>...] - ETA: 50s - loss: 12.9815 - yolo_layer_1_loss: 3.2856 - yolo_layer_2_loss: 3.9587 - yolo_layer_3_loss: 5.7372
+100/108 [==========================>...] - ETA: 44s - loss: 12.9908 - yolo_layer_1_loss: 3.2870 - yolo_layer_2_loss: 3.9833 - yolo_layer_3_loss: 5.7205
+101/108 [===========================>..] - ETA: 39s - loss: 13.0231 - yolo_layer_1_loss: 3.2883 - yolo_layer_2_loss: 3.9913 - yolo_layer_3_loss: 5.7434
+102/108 [===========================>..] - ETA: 33s - loss: 12.9912 - yolo_layer_1_loss: 3.2777 - yolo_layer_2_loss: 3.9781 - yolo_layer_3_loss: 5.7355
+103/108 [===========================>..] - ETA: 28s - loss: 12.9853 - yolo_layer_1_loss: 3.2686 - yolo_layer_2_loss: 3.9794 - yolo_layer_3_loss: 5.7374
+104/108 [===========================>..] - ETA: 22s - loss: 12.9472 - yolo_layer_1_loss: 3.2569 - yolo_layer_2_loss: 3.9593 - yolo_layer_3_loss: 5.7310
+105/108 [============================>.] - ETA: 16s - loss: 12.9804 - yolo_layer_1_loss: 3.2701 - yolo_layer_2_loss: 3.9792 - yolo_layer_3_loss: 5.7311
+106/108 [============================>.] - ETA: 11s - loss: 12.9996 - yolo_layer_1_loss: 3.2820 - yolo_layer_2_loss: 3.9834 - yolo_layer_3_loss: 5.7343
+107/108 [============================>.] - ETA: 5s - loss: 12.9704 - yolo_layer_1_loss: 3.2751 - yolo_layer_2_loss: 3.9711 - yolo_layer_3_loss: 5.7241 
+108/108 [==============================] - 605s 6s/step - loss: 13.0065 - yolo_layer_1_loss: 3.2689 - yolo_layer_2_loss: 3.9868 - yolo_layer_3_loss: 5.7509
+
+Epoch 00001: loss improved from inf to 13.00647, saving model to models/base_0.h5
+Epoch 2/50
+resizing:  384 384
+
+  1/108 [..............................] - ETA: 8:44 - loss: 9.7456 - yolo_layer_1_loss: 2.5445 - yolo_layer_2_loss: 2.8997 - yolo_layer_3_loss: 4.3013
+  2/108 [..............................] - ETA: 8:30 - loss: 11.6157 - yolo_layer_1_loss: 3.2386 - yolo_layer_2_loss: 3.3295 - yolo_layer_3_loss: 5.0477
+  3/108 [..............................] - ETA: 8:15 - loss: 12.5065 - yolo_layer_1_loss: 2.8608 - yolo_layer_2_loss: 4.1937 - yolo_layer_3_loss: 5.4520
+  4/108 [>.............................] - ETA: 8:07 - loss: 13.2990 - yolo_layer_1_loss: 2.7805 - yolo_layer_2_loss: 4.0987 - yolo_layer_3_loss: 6.4198
+  5/108 [>.............................] - ETA: 7:58 - loss: 13.0472 - yolo_layer_1_loss: 2.6999 - yolo_layer_2_loss: 3.9684 - yolo_layer_3_loss: 6.3789resizing:  480 480
+
+  6/108 [>.............................] - ETA: 7:52 - loss: 12.7278 - yolo_layer_1_loss: 2.7179 - yolo_layer_2_loss: 4.0764 - yolo_layer_3_loss: 5.9335
+  7/108 [>.............................] - ETA: 7:47 - loss: 12.5911 - yolo_layer_1_loss: 2.6583 - yolo_layer_2_loss: 3.9493 - yolo_layer_3_loss: 5.9835
+  8/108 [=>............................] - ETA: 7:40 - loss: 12.8227 - yolo_layer_1_loss: 2.7588 - yolo_layer_2_loss: 4.0000 - yolo_layer_3_loss: 6.0639resizing:  352 352
+
+  9/108 [=>............................] - ETA: 7:35 - loss: 12.8766 - yolo_layer_1_loss: 2.8022 - yolo_layer_2_loss: 4.0001 - yolo_layer_3_loss: 6.0743
+ 10/108 [=>............................] - ETA: 7:30 - loss: 12.5659 - yolo_layer_1_loss: 2.7772 - yolo_layer_2_loss: 3.9389 - yolo_layer_3_loss: 5.8498
+ 11/108 [==>...........................] - ETA: 7:26 - loss: 12.7548 - yolo_layer_1_loss: 2.6591 - yolo_layer_2_loss: 3.9638 - yolo_layer_3_loss: 6.1319
+ 12/108 [==>...........................] - ETA: 7:21 - loss: 12.3768 - yolo_layer_1_loss: 2.5415 - yolo_layer_2_loss: 3.8162 - yolo_layer_3_loss: 6.0192
+ 13/108 [==>...........................] - ETA: 7:15 - loss: 12.7019 - yolo_layer_1_loss: 2.4851 - yolo_layer_2_loss: 4.0860 - yolo_layer_3_loss: 6.1308
+ 14/108 [==>...........................] - ETA: 7:10 - loss: 13.0094 - yolo_layer_1_loss: 2.7122 - yolo_layer_2_loss: 4.2118 - yolo_layer_3_loss: 6.0854
+ 15/108 [===>..........................] - ETA: 7:17 - loss: 13.0870 - yolo_layer_1_loss: 2.7271 - yolo_layer_2_loss: 4.1723 - yolo_layer_3_loss: 6.1875
+ 16/108 [===>..........................] - ETA: 7:22 - loss: 13.1501 - yolo_layer_1_loss: 2.7905 - yolo_layer_2_loss: 4.2333 - yolo_layer_3_loss: 6.1263
+ 17/108 [===>..........................] - ETA: 7:26 - loss: 13.2783 - yolo_layer_1_loss: 2.8797 - yolo_layer_2_loss: 4.2272 - yolo_layer_3_loss: 6.1714
+ 18/108 [====>.........................] - ETA: 7:17 - loss: 13.2151 - yolo_layer_1_loss: 2.9169 - yolo_layer_2_loss: 4.2336 - yolo_layer_3_loss: 6.0647resizing:  320 320
+
+ 19/108 [====>.........................] - ETA: 7:09 - loss: 13.1840 - yolo_layer_1_loss: 2.9590 - yolo_layer_2_loss: 4.2360 - yolo_layer_3_loss: 5.9889
+ 20/108 [====>.........................] - ETA: 7:01 - loss: 13.1533 - yolo_layer_1_loss: 2.9150 - yolo_layer_2_loss: 4.1907 - yolo_layer_3_loss: 6.0475
+ 21/108 [====>.........................] - ETA: 6:53 - loss: 13.0443 - yolo_layer_1_loss: 2.9506 - yolo_layer_2_loss: 4.1295 - yolo_layer_3_loss: 5.9642
+ 22/108 [=====>........................] - ETA: 6:46 - loss: 13.1615 - yolo_layer_1_loss: 3.0701 - yolo_layer_2_loss: 4.1456 - yolo_layer_3_loss: 5.9458
+ 23/108 [=====>........................] - ETA: 6:39 - loss: 13.4305 - yolo_layer_1_loss: 3.1577 - yolo_layer_2_loss: 4.2146 - yolo_layer_3_loss: 6.0582
+ 24/108 [=====>........................] - ETA: 6:32 - loss: 13.2225 - yolo_layer_1_loss: 3.1128 - yolo_layer_2_loss: 4.1308 - yolo_layer_3_loss: 5.9789
+ 25/108 [=====>........................] - ETA: 6:25 - loss: 13.2196 - yolo_layer_1_loss: 3.1546 - yolo_layer_2_loss: 4.1139 - yolo_layer_3_loss: 5.9511
+ 26/108 [======>.......................] - ETA: 6:18 - loss: 13.1227 - yolo_layer_1_loss: 3.1196 - yolo_layer_2_loss: 4.0681 - yolo_layer_3_loss: 5.9350
+ 27/108 [======>.......................] - ETA: 6:12 - loss: 13.2035 - yolo_layer_1_loss: 3.1450 - yolo_layer_2_loss: 4.1271 - yolo_layer_3_loss: 5.9314
+ 28/108 [======>.......................] - ETA: 6:05 - loss: 13.1311 - yolo_layer_1_loss: 3.0930 - yolo_layer_2_loss: 4.0730 - yolo_layer_3_loss: 5.9651
+ 29/108 [=======>......................] - ETA: 5:58 - loss: 13.0911 - yolo_layer_1_loss: 3.0497 - yolo_layer_2_loss: 4.0430 - yolo_layer_3_loss: 5.9984
+ 30/108 [=======>......................] - ETA: 5:51 - loss: 13.0459 - yolo_layer_1_loss: 3.0053 - yolo_layer_2_loss: 4.0134 - yolo_layer_3_loss: 6.0273
+ 31/108 [=======>......................] - ETA: 5:45 - loss: 13.0106 - yolo_layer_1_loss: 2.9898 - yolo_layer_2_loss: 3.9880 - yolo_layer_3_loss: 6.0327
+ 32/108 [=======>......................] - ETA: 5:38 - loss: 13.0253 - yolo_layer_1_loss: 2.9707 - yolo_layer_2_loss: 3.9491 - yolo_layer_3_loss: 6.1055
+ 33/108 [========>.....................] - ETA: 5:32 - loss: 12.9857 - yolo_layer_1_loss: 2.9466 - yolo_layer_2_loss: 3.9603 - yolo_layer_3_loss: 6.0788
+ 34/108 [========>.....................] - ETA: 5:26 - loss: 12.8635 - yolo_layer_1_loss: 2.8952 - yolo_layer_2_loss: 3.9299 - yolo_layer_3_loss: 6.0384
+ 35/108 [========>.....................] - ETA: 5:20 - loss: 12.8202 - yolo_layer_1_loss: 2.9023 - yolo_layer_2_loss: 3.8994 - yolo_layer_3_loss: 6.0185resizing:  416 416
+
+ 36/108 [=========>....................] - ETA: 5:15 - loss: 12.8264 - yolo_layer_1_loss: 2.8921 - yolo_layer_2_loss: 3.8735 - yolo_layer_3_loss: 6.0609
+ 37/108 [=========>....................] - ETA: 5:10 - loss: 12.7891 - yolo_layer_1_loss: 2.8670 - yolo_layer_2_loss: 3.8520 - yolo_layer_3_loss: 6.0701
+ 38/108 [=========>....................] - ETA: 5:04 - loss: 12.7372 - yolo_layer_1_loss: 2.8475 - yolo_layer_2_loss: 3.8323 - yolo_layer_3_loss: 6.0573
+ 39/108 [=========>....................] - ETA: 4:58 - loss: 12.7791 - yolo_layer_1_loss: 2.9160 - yolo_layer_2_loss: 3.8074 - yolo_layer_3_loss: 6.0557
+ 40/108 [==========>...................] - ETA: 4:53 - loss: 12.7766 - yolo_layer_1_loss: 2.9227 - yolo_layer_2_loss: 3.8037 - yolo_layer_3_loss: 6.0503
+ 41/108 [==========>...................] - ETA: 4:50 - loss: 12.7619 - yolo_layer_1_loss: 2.9236 - yolo_layer_2_loss: 3.8389 - yolo_layer_3_loss: 5.9993resizing:  416 416
+
+ 42/108 [==========>...................] - ETA: 4:47 - loss: 12.8054 - yolo_layer_1_loss: 2.9405 - yolo_layer_2_loss: 3.8443 - yolo_layer_3_loss: 6.0206
+ 43/108 [==========>...................] - ETA: 4:44 - loss: 12.8633 - yolo_layer_1_loss: 2.9517 - yolo_layer_2_loss: 3.8986 - yolo_layer_3_loss: 6.0130
+ 44/108 [===========>..................] - ETA: 4:41 - loss: 12.8600 - yolo_layer_1_loss: 2.9561 - yolo_layer_2_loss: 3.8807 - yolo_layer_3_loss: 6.0232
+ 45/108 [===========>..................] - ETA: 4:37 - loss: 12.8282 - yolo_layer_1_loss: 2.9566 - yolo_layer_2_loss: 3.8987 - yolo_layer_3_loss: 5.9729
+ 46/108 [===========>..................] - ETA: 4:34 - loss: 12.8877 - yolo_layer_1_loss: 3.0116 - yolo_layer_2_loss: 3.8947 - yolo_layer_3_loss: 5.9814
+ 47/108 [============>.................] - ETA: 4:31 - loss: 12.8815 - yolo_layer_1_loss: 3.0143 - yolo_layer_2_loss: 3.8945 - yolo_layer_3_loss: 5.9727
+ 48/108 [============>.................] - ETA: 4:27 - loss: 12.8625 - yolo_layer_1_loss: 3.0049 - yolo_layer_2_loss: 3.8793 - yolo_layer_3_loss: 5.9783
+ 49/108 [============>.................] - ETA: 4:23 - loss: 12.7822 - yolo_layer_1_loss: 2.9933 - yolo_layer_2_loss: 3.8451 - yolo_layer_3_loss: 5.9438
+ 50/108 [============>.................] - ETA: 4:20 - loss: 12.7084 - yolo_layer_1_loss: 2.9759 - yolo_layer_2_loss: 3.8045 - yolo_layer_3_loss: 5.9280
+ 51/108 [=============>................] - ETA: 4:16 - loss: 12.6178 - yolo_layer_1_loss: 2.9540 - yolo_layer_2_loss: 3.7837 - yolo_layer_3_loss: 5.8800resizing:  384 384
+
+ 52/108 [=============>................] - ETA: 4:12 - loss: 12.6086 - yolo_layer_1_loss: 2.9518 - yolo_layer_2_loss: 3.7740 - yolo_layer_3_loss: 5.8828
+ 53/108 [=============>................] - ETA: 4:08 - loss: 12.6188 - yolo_layer_1_loss: 2.9605 - yolo_layer_2_loss: 3.7598 - yolo_layer_3_loss: 5.8985
+ 54/108 [==============>...............] - ETA: 4:04 - loss: 12.5823 - yolo_layer_1_loss: 2.9376 - yolo_layer_2_loss: 3.7354 - yolo_layer_3_loss: 5.9093
+ 55/108 [==============>...............] - ETA: 4:01 - loss: 12.6171 - yolo_layer_1_loss: 2.9478 - yolo_layer_2_loss: 3.7393 - yolo_layer_3_loss: 5.9299
+ 56/108 [==============>...............] - ETA: 3:57 - loss: 12.6278 - yolo_layer_1_loss: 2.9442 - yolo_layer_2_loss: 3.7367 - yolo_layer_3_loss: 5.9470
+ 57/108 [==============>...............] - ETA: 3:53 - loss: 12.6463 - yolo_layer_1_loss: 2.9603 - yolo_layer_2_loss: 3.7784 - yolo_layer_3_loss: 5.9076
+ 58/108 [===============>..............] - ETA: 3:49 - loss: 12.6064 - yolo_layer_1_loss: 2.9453 - yolo_layer_2_loss: 3.7614 - yolo_layer_3_loss: 5.8997
+ 59/108 [===============>..............] - ETA: 3:45 - loss: 12.6465 - yolo_layer_1_loss: 2.9363 - yolo_layer_2_loss: 3.8170 - yolo_layer_3_loss: 5.8932resizing:  480 480
+
+ 60/108 [===============>..............] - ETA: 3:40 - loss: 12.6848 - yolo_layer_1_loss: 2.9577 - yolo_layer_2_loss: 3.8334 - yolo_layer_3_loss: 5.8938
+ 61/108 [===============>..............] - ETA: 3:36 - loss: 12.6805 - yolo_layer_1_loss: 2.9586 - yolo_layer_2_loss: 3.8675 - yolo_layer_3_loss: 5.8543
+ 62/108 [================>.............] - ETA: 3:31 - loss: 12.6912 - yolo_layer_1_loss: 2.9561 - yolo_layer_2_loss: 3.8468 - yolo_layer_3_loss: 5.8884
+ 63/108 [================>.............] - ETA: 3:26 - loss: 12.7538 - yolo_layer_1_loss: 2.9891 - yolo_layer_2_loss: 3.8686 - yolo_layer_3_loss: 5.8961
+ 64/108 [================>.............] - ETA: 3:22 - loss: 12.7932 - yolo_layer_1_loss: 3.0243 - yolo_layer_2_loss: 3.8569 - yolo_layer_3_loss: 5.9120
+ 65/108 [=================>............] - ETA: 3:17 - loss: 12.8051 - yolo_layer_1_loss: 3.0034 - yolo_layer_2_loss: 3.8825 - yolo_layer_3_loss: 5.9192
+ 66/108 [=================>............] - ETA: 3:13 - loss: 12.7547 - yolo_layer_1_loss: 2.9934 - yolo_layer_2_loss: 3.8759 - yolo_layer_3_loss: 5.8854
+ 67/108 [=================>............] - ETA: 3:08 - loss: 12.7745 - yolo_layer_1_loss: 2.9873 - yolo_layer_2_loss: 3.8978 - yolo_layer_3_loss: 5.8893
+ 68/108 [=================>............] - ETA: 3:03 - loss: 12.7810 - yolo_layer_1_loss: 2.9908 - yolo_layer_2_loss: 3.9282 - yolo_layer_3_loss: 5.8620
+ 69/108 [==================>...........] - ETA: 3:00 - loss: 12.7794 - yolo_layer_1_loss: 2.9883 - yolo_layer_2_loss: 3.9265 - yolo_layer_3_loss: 5.8646
+ 70/108 [==================>...........] - ETA: 2:56 - loss: 12.7241 - yolo_layer_1_loss: 2.9859 - yolo_layer_2_loss: 3.9076 - yolo_layer_3_loss: 5.8306
+ 71/108 [==================>...........] - ETA: 2:53 - loss: 12.7197 - yolo_layer_1_loss: 2.9895 - yolo_layer_2_loss: 3.8990 - yolo_layer_3_loss: 5.8311
+ 72/108 [===================>..........] - ETA: 2:49 - loss: 12.7723 - yolo_layer_1_loss: 3.0119 - yolo_layer_2_loss: 3.9247 - yolo_layer_3_loss: 5.8357
+ 73/108 [===================>..........] - ETA: 2:45 - loss: 12.8309 - yolo_layer_1_loss: 3.0150 - yolo_layer_2_loss: 3.9455 - yolo_layer_3_loss: 5.8704
+ 74/108 [===================>..........] - ETA: 2:41 - loss: 12.8564 - yolo_layer_1_loss: 3.0151 - yolo_layer_2_loss: 3.9574 - yolo_layer_3_loss: 5.8838
+ 75/108 [===================>..........] - ETA: 2:37 - loss: 12.8809 - yolo_layer_1_loss: 3.0390 - yolo_layer_2_loss: 3.9574 - yolo_layer_3_loss: 5.8844
+ 76/108 [====================>.........] - ETA: 2:33 - loss: 12.9986 - yolo_layer_1_loss: 3.1180 - yolo_layer_2_loss: 3.9794 - yolo_layer_3_loss: 5.9013
+ 77/108 [====================>.........] - ETA: 2:29 - loss: 13.0640 - yolo_layer_1_loss: 3.1255 - yolo_layer_2_loss: 4.0173 - yolo_layer_3_loss: 5.9212
+ 78/108 [====================>.........] - ETA: 2:25 - loss: 13.1068 - yolo_layer_1_loss: 3.1281 - yolo_layer_2_loss: 4.0599 - yolo_layer_3_loss: 5.9188resizing:  480 480
+
+ 79/108 [====================>.........] - ETA: 2:20 - loss: 13.1236 - yolo_layer_1_loss: 3.1277 - yolo_layer_2_loss: 4.0859 - yolo_layer_3_loss: 5.9100
+ 80/108 [=====================>........] - ETA: 2:16 - loss: 13.0954 - yolo_layer_1_loss: 3.1239 - yolo_layer_2_loss: 4.0768 - yolo_layer_3_loss: 5.8948
+ 81/108 [=====================>........] - ETA: 2:12 - loss: 13.1307 - yolo_layer_1_loss: 3.1383 - yolo_layer_2_loss: 4.0866 - yolo_layer_3_loss: 5.9058
+ 82/108 [=====================>........] - ETA: 2:07 - loss: 13.1212 - yolo_layer_1_loss: 3.1270 - yolo_layer_2_loss: 4.0811 - yolo_layer_3_loss: 5.9130
+ 83/108 [======================>.......] - ETA: 2:03 - loss: 13.1294 - yolo_layer_1_loss: 3.1220 - yolo_layer_2_loss: 4.1121 - yolo_layer_3_loss: 5.8953
+ 84/108 [======================>.......] - ETA: 1:58 - loss: 13.1314 - yolo_layer_1_loss: 3.1468 - yolo_layer_2_loss: 4.0938 - yolo_layer_3_loss: 5.8908resizing:  384 384
+
+ 85/108 [======================>.......] - ETA: 1:54 - loss: 13.0979 - yolo_layer_1_loss: 3.1298 - yolo_layer_2_loss: 4.0764 - yolo_layer_3_loss: 5.8917
+ 86/108 [======================>.......] - ETA: 1:49 - loss: 13.0921 - yolo_layer_1_loss: 3.1413 - yolo_layer_2_loss: 4.0918 - yolo_layer_3_loss: 5.8591resizing:  416 416
+
+ 87/108 [=======================>......] - ETA: 1:45 - loss: 13.1195 - yolo_layer_1_loss: 3.1442 - yolo_layer_2_loss: 4.1119 - yolo_layer_3_loss: 5.8633
+ 88/108 [=======================>......] - ETA: 1:40 - loss: 13.1494 - yolo_layer_1_loss: 3.1589 - yolo_layer_2_loss: 4.1123 - yolo_layer_3_loss: 5.8783resizing:  448 448
+
+ 89/108 [=======================>......] - ETA: 1:35 - loss: 13.1918 - yolo_layer_1_loss: 3.1760 - yolo_layer_2_loss: 4.1246 - yolo_layer_3_loss: 5.8912
+ 90/108 [========================>.....] - ETA: 1:31 - loss: 13.1975 - yolo_layer_1_loss: 3.2108 - yolo_layer_2_loss: 4.1205 - yolo_layer_3_loss: 5.8661
+ 91/108 [========================>.....] - ETA: 1:26 - loss: 13.2002 - yolo_layer_1_loss: 3.2305 - yolo_layer_2_loss: 4.1201 - yolo_layer_3_loss: 5.8495
+ 92/108 [========================>.....] - ETA: 1:21 - loss: 13.2252 - yolo_layer_1_loss: 3.2435 - yolo_layer_2_loss: 4.1346 - yolo_layer_3_loss: 5.8471
+ 93/108 [========================>.....] - ETA: 1:16 - loss: 13.2212 - yolo_layer_1_loss: 3.2384 - yolo_layer_2_loss: 4.1505 - yolo_layer_3_loss: 5.8323
+ 94/108 [=========================>....] - ETA: 1:11 - loss: 13.1776 - yolo_layer_1_loss: 3.2167 - yolo_layer_2_loss: 4.1289 - yolo_layer_3_loss: 5.8320
+ 95/108 [=========================>....] - ETA: 1:06 - loss: 13.2117 - yolo_layer_1_loss: 3.2419 - yolo_layer_2_loss: 4.1316 - yolo_layer_3_loss: 5.8381
+ 96/108 [=========================>....] - ETA: 1:01 - loss: 13.2301 - yolo_layer_1_loss: 3.2456 - yolo_layer_2_loss: 4.1553 - yolo_layer_3_loss: 5.8292
+ 97/108 [=========================>....] - ETA: 56s - loss: 13.2619 - yolo_layer_1_loss: 3.2425 - yolo_layer_2_loss: 4.1743 - yolo_layer_3_loss: 5.8450 
+ 98/108 [==========================>...] - ETA: 51s - loss: 13.2387 - yolo_layer_1_loss: 3.2395 - yolo_layer_2_loss: 4.1634 - yolo_layer_3_loss: 5.8358
+ 99/108 [==========================>...] - ETA: 46s - loss: 13.2263 - yolo_layer_1_loss: 3.2384 - yolo_layer_2_loss: 4.1559 - yolo_layer_3_loss: 5.8320
+100/108 [==========================>...] - ETA: 40s - loss: 13.2592 - yolo_layer_1_loss: 3.2488 - yolo_layer_2_loss: 4.1705 - yolo_layer_3_loss: 5.8398
+101/108 [===========================>..] - ETA: 35s - loss: 13.2318 - yolo_layer_1_loss: 3.2449 - yolo_layer_2_loss: 4.1563 - yolo_layer_3_loss: 5.8306
+102/108 [===========================>..] - ETA: 30s - loss: 13.2506 - yolo_layer_1_loss: 3.2652 - yolo_layer_2_loss: 4.1586 - yolo_layer_3_loss: 5.8268
+103/108 [===========================>..] - ETA: 25s - loss: 13.2419 - yolo_layer_1_loss: 3.2627 - yolo_layer_2_loss: 4.1659 - yolo_layer_3_loss: 5.8133
+104/108 [===========================>..] - ETA: 20s - loss: 13.2616 - yolo_layer_1_loss: 3.2687 - yolo_layer_2_loss: 4.1790 - yolo_layer_3_loss: 5.8139
+105/108 [============================>.] - ETA: 15s - loss: 13.2342 - yolo_layer_1_loss: 3.2671 - yolo_layer_2_loss: 4.1770 - yolo_layer_3_loss: 5.7901
+106/108 [============================>.] - ETA: 10s - loss: 13.2431 - yolo_layer_1_loss: 3.2712 - yolo_layer_2_loss: 4.1696 - yolo_layer_3_loss: 5.8024
+107/108 [============================>.] - ETA: 5s - loss: 13.2421 - yolo_layer_1_loss: 3.2656 - yolo_layer_2_loss: 4.1697 - yolo_layer_3_loss: 5.8068 
+108/108 [==============================] - 559s 5s/step - loss: 13.2110 - yolo_layer_1_loss: 3.2606 - yolo_layer_2_loss: 4.1606 - yolo_layer_3_loss: 5.7898
+
+Epoch 00002: loss did not improve from 13.00647
+Epoch 3/50
+resizing:  352 352
+
+  1/108 [..............................] - ETA: 10:33 - loss: 12.1444 - yolo_layer_1_loss: 4.2852 - yolo_layer_2_loss: 3.2901 - yolo_layer_3_loss: 4.5691resizing:  320 320
+
+  2/108 [..............................] - ETA: 10:18 - loss: 11.5116 - yolo_layer_1_loss: 3.8749 - yolo_layer_2_loss: 3.0022 - yolo_layer_3_loss: 4.6345
+  3/108 [..............................] - ETA: 10:08 - loss: 10.8238 - yolo_layer_1_loss: 4.0305 - yolo_layer_2_loss: 3.0350 - yolo_layer_3_loss: 3.7583
+  4/108 [>.............................] - ETA: 10:06 - loss: 10.9086 - yolo_layer_1_loss: 3.6949 - yolo_layer_2_loss: 2.9698 - yolo_layer_3_loss: 4.2439
+  5/108 [>.............................] - ETA: 9:59 - loss: 11.4287 - yolo_layer_1_loss: 3.6247 - yolo_layer_2_loss: 3.3567 - yolo_layer_3_loss: 4.4473 
+  6/108 [>.............................] - ETA: 9:54 - loss: 12.0530 - yolo_layer_1_loss: 3.8428 - yolo_layer_2_loss: 3.9009 - yolo_layer_3_loss: 4.3094
+  7/108 [>.............................] - ETA: 9:48 - loss: 11.9463 - yolo_layer_1_loss: 3.7044 - yolo_layer_2_loss: 3.8894 - yolo_layer_3_loss: 4.3526
+  8/108 [=>............................] - ETA: 9:41 - loss: 11.9394 - yolo_layer_1_loss: 3.7149 - yolo_layer_2_loss: 3.6781 - yolo_layer_3_loss: 4.5464resizing:  480 480
+
+  9/108 [=>............................] - ETA: 9:35 - loss: 11.9754 - yolo_layer_1_loss: 3.6793 - yolo_layer_2_loss: 3.7146 - yolo_layer_3_loss: 4.5815
+ 10/108 [=>............................] - ETA: 9:13 - loss: 11.9867 - yolo_layer_1_loss: 3.6877 - yolo_layer_2_loss: 3.6511 - yolo_layer_3_loss: 4.6478
+ 11/108 [==>...........................] - ETA: 8:50 - loss: 12.1442 - yolo_layer_1_loss: 3.5502 - yolo_layer_2_loss: 3.7537 - yolo_layer_3_loss: 4.8403resizing:  448 448
+
+ 12/108 [==>...........................] - ETA: 8:31 - loss: 11.9098 - yolo_layer_1_loss: 3.3507 - yolo_layer_2_loss: 3.6443 - yolo_layer_3_loss: 4.9149
+ 13/108 [==>...........................] - ETA: 8:14 - loss: 12.1108 - yolo_layer_1_loss: 3.2882 - yolo_layer_2_loss: 3.7811 - yolo_layer_3_loss: 5.0416
+ 14/108 [==>...........................] - ETA: 7:59 - loss: 12.0543 - yolo_layer_1_loss: 3.1757 - yolo_layer_2_loss: 3.7312 - yolo_layer_3_loss: 5.1474
+ 15/108 [===>..........................] - ETA: 7:45 - loss: 11.8950 - yolo_layer_1_loss: 3.0521 - yolo_layer_2_loss: 3.6725 - yolo_layer_3_loss: 5.1704
+ 16/108 [===>..........................] - ETA: 7:32 - loss: 11.7365 - yolo_layer_1_loss: 3.0188 - yolo_layer_2_loss: 3.6038 - yolo_layer_3_loss: 5.1139
+ 17/108 [===>..........................] - ETA: 7:21 - loss: 12.0567 - yolo_layer_1_loss: 3.1438 - yolo_layer_2_loss: 3.7848 - yolo_layer_3_loss: 5.1281
+ 18/108 [====>.........................] - ETA: 7:24 - loss: 12.1409 - yolo_layer_1_loss: 3.2250 - yolo_layer_2_loss: 3.8743 - yolo_layer_3_loss: 5.0416
+ 19/108 [====>.........................] - ETA: 7:26 - loss: 12.0118 - yolo_layer_1_loss: 3.2245 - yolo_layer_2_loss: 3.8313 - yolo_layer_3_loss: 4.9560
+ 20/108 [====>.........................] - ETA: 7:27 - loss: 12.0755 - yolo_layer_1_loss: 3.2638 - yolo_layer_2_loss: 3.9499 - yolo_layer_3_loss: 4.8618
+ 21/108 [====>.........................] - ETA: 7:25 - loss: 12.1464 - yolo_layer_1_loss: 3.3465 - yolo_layer_2_loss: 3.9209 - yolo_layer_3_loss: 4.8790
+ 22/108 [=====>........................] - ETA: 7:22 - loss: 12.1978 - yolo_layer_1_loss: 3.3528 - yolo_layer_2_loss: 3.9697 - yolo_layer_3_loss: 4.8753
+ 23/108 [=====>........................] - ETA: 7:20 - loss: 12.4177 - yolo_layer_1_loss: 3.3722 - yolo_layer_2_loss: 4.1432 - yolo_layer_3_loss: 4.9023
+ 24/108 [=====>........................] - ETA: 7:16 - loss: 12.4623 - yolo_layer_1_loss: 3.5006 - yolo_layer_2_loss: 4.1203 - yolo_layer_3_loss: 4.8413
+ 25/108 [=====>........................] - ETA: 7:13 - loss: 12.4379 - yolo_layer_1_loss: 3.4986 - yolo_layer_2_loss: 4.1114 - yolo_layer_3_loss: 4.8279
+ 26/108 [======>.......................] - ETA: 7:10 - loss: 12.3782 - yolo_layer_1_loss: 3.4740 - yolo_layer_2_loss: 4.1197 - yolo_layer_3_loss: 4.7845
+ 27/108 [======>.......................] - ETA: 7:06 - loss: 12.5461 - yolo_layer_1_loss: 3.4968 - yolo_layer_2_loss: 4.2048 - yolo_layer_3_loss: 4.8445
+ 28/108 [======>.......................] - ETA: 7:02 - loss: 12.4314 - yolo_layer_1_loss: 3.5012 - yolo_layer_2_loss: 4.1760 - yolo_layer_3_loss: 4.7542
+ 29/108 [=======>......................] - ETA: 6:58 - loss: 12.4882 - yolo_layer_1_loss: 3.4963 - yolo_layer_2_loss: 4.2327 - yolo_layer_3_loss: 4.7592
+ 30/108 [=======>......................] - ETA: 6:54 - loss: 12.4483 - yolo_layer_1_loss: 3.4640 - yolo_layer_2_loss: 4.2146 - yolo_layer_3_loss: 4.7697
+ 31/108 [=======>......................] - ETA: 6:50 - loss: 12.3820 - yolo_layer_1_loss: 3.4298 - yolo_layer_2_loss: 4.1869 - yolo_layer_3_loss: 4.7654
+ 32/108 [=======>......................] - ETA: 6:46 - loss: 12.5286 - yolo_layer_1_loss: 3.4171 - yolo_layer_2_loss: 4.2186 - yolo_layer_3_loss: 4.8928
+ 33/108 [========>.....................] - ETA: 6:42 - loss: 12.4845 - yolo_layer_1_loss: 3.4105 - yolo_layer_2_loss: 4.2057 - yolo_layer_3_loss: 4.8683
+ 34/108 [========>.....................] - ETA: 6:38 - loss: 12.6278 - yolo_layer_1_loss: 3.4227 - yolo_layer_2_loss: 4.2859 - yolo_layer_3_loss: 4.9192
+ 35/108 [========>.....................] - ETA: 6:33 - loss: 12.7633 - yolo_layer_1_loss: 3.4575 - yolo_layer_2_loss: 4.3342 - yolo_layer_3_loss: 4.9716
+ 36/108 [=========>....................] - ETA: 6:29 - loss: 12.8481 - yolo_layer_1_loss: 3.4910 - yolo_layer_2_loss: 4.3962 - yolo_layer_3_loss: 4.9609
+ 37/108 [=========>....................] - ETA: 6:24 - loss: 12.8343 - yolo_layer_1_loss: 3.4839 - yolo_layer_2_loss: 4.3652 - yolo_layer_3_loss: 4.9852resizing:  416 416
+
+ 38/108 [=========>....................] - ETA: 6:20 - loss: 12.7791 - yolo_layer_1_loss: 3.4900 - yolo_layer_2_loss: 4.3404 - yolo_layer_3_loss: 4.9487
+ 39/108 [=========>....................] - ETA: 6:15 - loss: 12.7125 - yolo_layer_1_loss: 3.4929 - yolo_layer_2_loss: 4.3033 - yolo_layer_3_loss: 4.9163
+ 40/108 [==========>...................] - ETA: 6:10 - loss: 12.7841 - yolo_layer_1_loss: 3.5045 - yolo_layer_2_loss: 4.3355 - yolo_layer_3_loss: 4.9440
+ 41/108 [==========>...................] - ETA: 6:05 - loss: 12.7883 - yolo_layer_1_loss: 3.4734 - yolo_layer_2_loss: 4.3321 - yolo_layer_3_loss: 4.9828
+ 42/108 [==========>...................] - ETA: 6:00 - loss: 12.8115 - yolo_layer_1_loss: 3.5019 - yolo_layer_2_loss: 4.2819 - yolo_layer_3_loss: 5.0277
+ 43/108 [==========>...................] - ETA: 5:55 - loss: 12.9188 - yolo_layer_1_loss: 3.4971 - yolo_layer_2_loss: 4.3401 - yolo_layer_3_loss: 5.0816
+ 44/108 [===========>..................] - ETA: 5:50 - loss: 13.0460 - yolo_layer_1_loss: 3.5182 - yolo_layer_2_loss: 4.4056 - yolo_layer_3_loss: 5.1222
+ 45/108 [===========>..................] - ETA: 5:45 - loss: 13.0793 - yolo_layer_1_loss: 3.5529 - yolo_layer_2_loss: 4.4114 - yolo_layer_3_loss: 5.1150
+ 46/108 [===========>..................] - ETA: 5:40 - loss: 13.0599 - yolo_layer_1_loss: 3.5320 - yolo_layer_2_loss: 4.3810 - yolo_layer_3_loss: 5.1469
+ 47/108 [============>.................] - ETA: 5:34 - loss: 13.0010 - yolo_layer_1_loss: 3.5084 - yolo_layer_2_loss: 4.3539 - yolo_layer_3_loss: 5.1387
+ 48/108 [============>.................] - ETA: 5:28 - loss: 13.0363 - yolo_layer_1_loss: 3.4963 - yolo_layer_2_loss: 4.3308 - yolo_layer_3_loss: 5.2091
+ 49/108 [============>.................] - ETA: 5:22 - loss: 13.0455 - yolo_layer_1_loss: 3.4671 - yolo_layer_2_loss: 4.3469 - yolo_layer_3_loss: 5.2315resizing:  416 416
+
+ 50/108 [============>.................] - ETA: 5:17 - loss: 13.0266 - yolo_layer_1_loss: 3.4489 - yolo_layer_2_loss: 4.3360 - yolo_layer_3_loss: 5.2418
+ 51/108 [=============>................] - ETA: 5:11 - loss: 13.0221 - yolo_layer_1_loss: 3.4103 - yolo_layer_2_loss: 4.3768 - yolo_layer_3_loss: 5.2350
+ 52/108 [=============>................] - ETA: 5:05 - loss: 13.0380 - yolo_layer_1_loss: 3.3951 - yolo_layer_2_loss: 4.3748 - yolo_layer_3_loss: 5.2681resizing:  384 384
+
+ 53/108 [=============>................] - ETA: 4:59 - loss: 13.0495 - yolo_layer_1_loss: 3.3818 - yolo_layer_2_loss: 4.3847 - yolo_layer_3_loss: 5.2829
+ 54/108 [==============>...............] - ETA: 4:54 - loss: 13.1136 - yolo_layer_1_loss: 3.3697 - yolo_layer_2_loss: 4.4365 - yolo_layer_3_loss: 5.3073
+ 55/108 [==============>...............] - ETA: 4:48 - loss: 13.1749 - yolo_layer_1_loss: 3.3848 - yolo_layer_2_loss: 4.4474 - yolo_layer_3_loss: 5.3427
+ 56/108 [==============>...............] - ETA: 4:42 - loss: 13.1096 - yolo_layer_1_loss: 3.3822 - yolo_layer_2_loss: 4.4187 - yolo_layer_3_loss: 5.3088
+ 57/108 [==============>...............] - ETA: 4:36 - loss: 13.0941 - yolo_layer_1_loss: 3.3645 - yolo_layer_2_loss: 4.4058 - yolo_layer_3_loss: 5.3238
+ 58/108 [===============>..............] - ETA: 4:31 - loss: 13.1869 - yolo_layer_1_loss: 3.3903 - yolo_layer_2_loss: 4.4422 - yolo_layer_3_loss: 5.3544
+ 59/108 [===============>..............] - ETA: 4:25 - loss: 13.1400 - yolo_layer_1_loss: 3.3780 - yolo_layer_2_loss: 4.4340 - yolo_layer_3_loss: 5.3281
+ 60/108 [===============>..............] - ETA: 4:19 - loss: 13.1394 - yolo_layer_1_loss: 3.3872 - yolo_layer_2_loss: 4.4166 - yolo_layer_3_loss: 5.3357
+ 61/108 [===============>..............] - ETA: 4:14 - loss: 13.1738 - yolo_layer_1_loss: 3.3806 - yolo_layer_2_loss: 4.4464 - yolo_layer_3_loss: 5.3468
+ 62/108 [================>.............] - ETA: 4:08 - loss: 13.0970 - yolo_layer_1_loss: 3.3644 - yolo_layer_2_loss: 4.4147 - yolo_layer_3_loss: 5.3179resizing:  384 384
+
+ 63/108 [================>.............] - ETA: 4:02 - loss: 13.0875 - yolo_layer_1_loss: 3.3992 - yolo_layer_2_loss: 4.3919 - yolo_layer_3_loss: 5.2964
+ 64/108 [================>.............] - ETA: 3:56 - loss: 13.1371 - yolo_layer_1_loss: 3.4321 - yolo_layer_2_loss: 4.3984 - yolo_layer_3_loss: 5.3066
+ 65/108 [=================>............] - ETA: 3:50 - loss: 13.1598 - yolo_layer_1_loss: 3.4328 - yolo_layer_2_loss: 4.3882 - yolo_layer_3_loss: 5.3388
+ 66/108 [=================>............] - ETA: 3:44 - loss: 13.1044 - yolo_layer_1_loss: 3.4017 - yolo_layer_2_loss: 4.3448 - yolo_layer_3_loss: 5.3579
+ 67/108 [=================>............] - ETA: 3:38 - loss: 13.1495 - yolo_layer_1_loss: 3.4311 - yolo_layer_2_loss: 4.3643 - yolo_layer_3_loss: 5.3541
+ 68/108 [=================>............] - ETA: 3:32 - loss: 13.1647 - yolo_layer_1_loss: 3.4245 - yolo_layer_2_loss: 4.3989 - yolo_layer_3_loss: 5.3413
+ 69/108 [==================>...........] - ETA: 3:26 - loss: 13.1108 - yolo_layer_1_loss: 3.4005 - yolo_layer_2_loss: 4.3769 - yolo_layer_3_loss: 5.3334
+ 70/108 [==================>...........] - ETA: 3:21 - loss: 13.1817 - yolo_layer_1_loss: 3.4579 - yolo_layer_2_loss: 4.3912 - yolo_layer_3_loss: 5.3326
+ 71/108 [==================>...........] - ETA: 3:15 - loss: 13.1478 - yolo_layer_1_loss: 3.4483 - yolo_layer_2_loss: 4.3786 - yolo_layer_3_loss: 5.3210
+ 72/108 [===================>..........] - ETA: 3:10 - loss: 13.1568 - yolo_layer_1_loss: 3.4915 - yolo_layer_2_loss: 4.3629 - yolo_layer_3_loss: 5.3023
+ 73/108 [===================>..........] - ETA: 3:04 - loss: 13.1661 - yolo_layer_1_loss: 3.4776 - yolo_layer_2_loss: 4.3590 - yolo_layer_3_loss: 5.3296
+ 74/108 [===================>..........] - ETA: 2:58 - loss: 13.1927 - yolo_layer_1_loss: 3.4625 - yolo_layer_2_loss: 4.3847 - yolo_layer_3_loss: 5.3455
+ 75/108 [===================>..........] - ETA: 2:53 - loss: 13.1810 - yolo_layer_1_loss: 3.4750 - yolo_layer_2_loss: 4.3664 - yolo_layer_3_loss: 5.3395
+ 76/108 [====================>.........] - ETA: 2:47 - loss: 13.1626 - yolo_layer_1_loss: 3.4611 - yolo_layer_2_loss: 4.3537 - yolo_layer_3_loss: 5.3479
+ 77/108 [====================>.........] - ETA: 2:42 - loss: 13.1382 - yolo_layer_1_loss: 3.4371 - yolo_layer_2_loss: 4.3247 - yolo_layer_3_loss: 5.3763
+ 78/108 [====================>.........] - ETA: 2:36 - loss: 13.0992 - yolo_layer_1_loss: 3.4055 - yolo_layer_2_loss: 4.3020 - yolo_layer_3_loss: 5.3917
+ 79/108 [====================>.........] - ETA: 2:31 - loss: 13.1327 - yolo_layer_1_loss: 3.4227 - yolo_layer_2_loss: 4.2987 - yolo_layer_3_loss: 5.4113
+ 80/108 [=====================>........] - ETA: 2:25 - loss: 13.1498 - yolo_layer_1_loss: 3.4356 - yolo_layer_2_loss: 4.3151 - yolo_layer_3_loss: 5.3991
+ 81/108 [=====================>........] - ETA: 2:20 - loss: 13.1843 - yolo_layer_1_loss: 3.4407 - yolo_layer_2_loss: 4.3523 - yolo_layer_3_loss: 5.3912
+ 82/108 [=====================>........] - ETA: 2:14 - loss: 13.1766 - yolo_layer_1_loss: 3.4278 - yolo_layer_2_loss: 4.3391 - yolo_layer_3_loss: 5.4097resizing:  448 448
+
+ 83/108 [======================>.......] - ETA: 2:09 - loss: 13.1728 - yolo_layer_1_loss: 3.4334 - yolo_layer_2_loss: 4.3275 - yolo_layer_3_loss: 5.4118
+ 84/108 [======================>.......] - ETA: 2:04 - loss: 13.1954 - yolo_layer_1_loss: 3.4560 - yolo_layer_2_loss: 4.3452 - yolo_layer_3_loss: 5.3942
+ 85/108 [======================>.......] - ETA: 1:58 - loss: 13.1684 - yolo_layer_1_loss: 3.4470 - yolo_layer_2_loss: 4.3393 - yolo_layer_3_loss: 5.3822
+ 86/108 [======================>.......] - ETA: 1:53 - loss: 13.2371 - yolo_layer_1_loss: 3.4722 - yolo_layer_2_loss: 4.3417 - yolo_layer_3_loss: 5.4232
+ 87/108 [=======================>......] - ETA: 1:48 - loss: 13.2180 - yolo_layer_1_loss: 3.4534 - yolo_layer_2_loss: 4.3381 - yolo_layer_3_loss: 5.4265resizing:  288 288
+
+ 88/108 [=======================>......] - ETA: 1:42 - loss: 13.2643 - yolo_layer_1_loss: 3.4436 - yolo_layer_2_loss: 4.3741 - yolo_layer_3_loss: 5.4466resizing:  352 352
+
+ 89/108 [=======================>......] - ETA: 1:37 - loss: 13.2516 - yolo_layer_1_loss: 3.4418 - yolo_layer_2_loss: 4.3625 - yolo_layer_3_loss: 5.4473
+ 90/108 [========================>.....] - ETA: 1:32 - loss: 13.2278 - yolo_layer_1_loss: 3.4178 - yolo_layer_2_loss: 4.3428 - yolo_layer_3_loss: 5.4673resizing:  320 320
+
+ 91/108 [========================>.....] - ETA: 1:27 - loss: 13.2388 - yolo_layer_1_loss: 3.4244 - yolo_layer_2_loss: 4.3388 - yolo_layer_3_loss: 5.4755
+ 92/108 [========================>.....] - ETA: 1:22 - loss: 13.2758 - yolo_layer_1_loss: 3.4591 - yolo_layer_2_loss: 4.3588 - yolo_layer_3_loss: 5.4579
+ 93/108 [========================>.....] - ETA: 1:17 - loss: 13.2901 - yolo_layer_1_loss: 3.4628 - yolo_layer_2_loss: 4.3665 - yolo_layer_3_loss: 5.4608
+ 94/108 [=========================>....] - ETA: 1:12 - loss: 13.2507 - yolo_layer_1_loss: 3.4423 - yolo_layer_2_loss: 4.3531 - yolo_layer_3_loss: 5.4553
+ 95/108 [=========================>....] - ETA: 1:07 - loss: 13.2616 - yolo_layer_1_loss: 3.4394 - yolo_layer_2_loss: 4.3689 - yolo_layer_3_loss: 5.4534
+ 96/108 [=========================>....] - ETA: 1:01 - loss: 13.2440 - yolo_layer_1_loss: 3.4378 - yolo_layer_2_loss: 4.3673 - yolo_layer_3_loss: 5.4389
+ 97/108 [=========================>....] - ETA: 56s - loss: 13.2591 - yolo_layer_1_loss: 3.4066 - yolo_layer_2_loss: 4.3789 - yolo_layer_3_loss: 5.4736 
+ 98/108 [==========================>...] - ETA: 51s - loss: 13.2630 - yolo_layer_1_loss: 3.3952 - yolo_layer_2_loss: 4.3659 - yolo_layer_3_loss: 5.5020
+ 99/108 [==========================>...] - ETA: 46s - loss: 13.2207 - yolo_layer_1_loss: 3.3779 - yolo_layer_2_loss: 4.3439 - yolo_layer_3_loss: 5.4989
+100/108 [==========================>...] - ETA: 40s - loss: 13.2464 - yolo_layer_1_loss: 3.3927 - yolo_layer_2_loss: 4.3387 - yolo_layer_3_loss: 5.5151
+101/108 [===========================>..] - ETA: 35s - loss: 13.2188 - yolo_layer_1_loss: 3.3800 - yolo_layer_2_loss: 4.3277 - yolo_layer_3_loss: 5.5111
+102/108 [===========================>..] - ETA: 30s - loss: 13.2155 - yolo_layer_1_loss: 3.3809 - yolo_layer_2_loss: 4.3181 - yolo_layer_3_loss: 5.5165
+103/108 [===========================>..] - ETA: 25s - loss: 13.2218 - yolo_layer_1_loss: 3.3904 - yolo_layer_2_loss: 4.3038 - yolo_layer_3_loss: 5.5276
+104/108 [===========================>..] - ETA: 20s - loss: 13.2043 - yolo_layer_1_loss: 3.3764 - yolo_layer_2_loss: 4.2884 - yolo_layer_3_loss: 5.5395
+105/108 [============================>.] - ETA: 15s - loss: 13.1727 - yolo_layer_1_loss: 3.3620 - yolo_layer_2_loss: 4.2755 - yolo_layer_3_loss: 5.5351
+106/108 [============================>.] - ETA: 10s - loss: 13.2129 - yolo_layer_1_loss: 3.3702 - yolo_layer_2_loss: 4.2856 - yolo_layer_3_loss: 5.5570
+107/108 [============================>.] - ETA: 5s - loss: 13.1881 - yolo_layer_1_loss: 3.3585 - yolo_layer_2_loss: 4.2751 - yolo_layer_3_loss: 5.5546 resizing:  416 416
+resizing:  416 416
+
+108/108 [==============================] - 541s 5s/step - loss: 13.1440 - yolo_layer_1_loss: 3.3325 - yolo_layer_2_loss: 4.2540 - yolo_layer_3_loss: 5.5575
+
+Epoch 00003: loss did not improve from 13.00647
+
+Epoch 00003: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+Epoch 4/50
+
+  1/108 [..............................] - ETA: 6:40 - loss: 9.3296 - yolo_layer_1_loss: 1.6935 - yolo_layer_2_loss: 2.4569 - yolo_layer_3_loss: 5.1792
+  2/108 [..............................] - ETA: 6:28 - loss: 11.1493 - yolo_layer_1_loss: 2.0053 - yolo_layer_2_loss: 3.7679 - yolo_layer_3_loss: 5.3761
+  3/108 [..............................] - ETA: 7:13 - loss: 11.6006 - yolo_layer_1_loss: 2.5530 - yolo_layer_2_loss: 3.6352 - yolo_layer_3_loss: 5.4124
+  4/108 [>.............................] - ETA: 7:35 - loss: 11.4313 - yolo_layer_1_loss: 2.5656 - yolo_layer_2_loss: 3.6760 - yolo_layer_3_loss: 5.1897resizing:  448 448
+
+  5/108 [>.............................] - ETA: 7:45 - loss: 11.4928 - yolo_layer_1_loss: 2.5446 - yolo_layer_2_loss: 3.5107 - yolo_layer_3_loss: 5.4375
+  6/108 [>.............................] - ETA: 7:52 - loss: 11.7546 - yolo_layer_1_loss: 2.7768 - yolo_layer_2_loss: 3.5722 - yolo_layer_3_loss: 5.4057
+  7/108 [>.............................] - ETA: 7:55 - loss: 11.6977 - yolo_layer_1_loss: 2.8071 - yolo_layer_2_loss: 3.4361 - yolo_layer_3_loss: 5.4546
+  8/108 [=>............................] - ETA: 7:56 - loss: 11.7658 - yolo_layer_1_loss: 2.9407 - yolo_layer_2_loss: 3.3406 - yolo_layer_3_loss: 5.4845
+  9/108 [=>............................] - ETA: 7:56 - loss: 12.0654 - yolo_layer_1_loss: 3.1674 - yolo_layer_2_loss: 3.3413 - yolo_layer_3_loss: 5.5568
+ 10/108 [=>............................] - ETA: 7:55 - loss: 12.0454 - yolo_layer_1_loss: 3.0041 - yolo_layer_2_loss: 3.5292 - yolo_layer_3_loss: 5.5120
+ 11/108 [==>...........................] - ETA: 7:54 - loss: 12.3787 - yolo_layer_1_loss: 2.9564 - yolo_layer_2_loss: 3.6561 - yolo_layer_3_loss: 5.7663
+ 12/108 [==>...........................] - ETA: 7:51 - loss: 12.5625 - yolo_layer_1_loss: 3.1798 - yolo_layer_2_loss: 3.7291 - yolo_layer_3_loss: 5.6536
+ 13/108 [==>...........................] - ETA: 7:48 - loss: 12.6960 - yolo_layer_1_loss: 3.1457 - yolo_layer_2_loss: 3.6922 - yolo_layer_3_loss: 5.8580resizing:  384 384
+
+ 14/108 [==>...........................] - ETA: 7:48 - loss: 13.2993 - yolo_layer_1_loss: 3.3935 - yolo_layer_2_loss: 3.8460 - yolo_layer_3_loss: 6.0598
+ 15/108 [===>..........................] - ETA: 7:47 - loss: 13.5721 - yolo_layer_1_loss: 3.6869 - yolo_layer_2_loss: 3.8245 - yolo_layer_3_loss: 6.0607
+ 16/108 [===>..........................] - ETA: 7:47 - loss: 13.4613 - yolo_layer_1_loss: 3.6652 - yolo_layer_2_loss: 3.8132 - yolo_layer_3_loss: 5.9829
+ 17/108 [===>..........................] - ETA: 7:46 - loss: 13.6274 - yolo_layer_1_loss: 3.6470 - yolo_layer_2_loss: 3.9496 - yolo_layer_3_loss: 6.0308
+ 18/108 [====>.........................] - ETA: 7:44 - loss: 13.7248 - yolo_layer_1_loss: 3.7531 - yolo_layer_2_loss: 3.9663 - yolo_layer_3_loss: 6.0054
+ 19/108 [====>.........................] - ETA: 7:43 - loss: 13.7038 - yolo_layer_1_loss: 3.7043 - yolo_layer_2_loss: 3.9435 - yolo_layer_3_loss: 6.0560
+ 20/108 [====>.........................] - ETA: 7:40 - loss: 13.6514 - yolo_layer_1_loss: 3.6731 - yolo_layer_2_loss: 4.0094 - yolo_layer_3_loss: 5.9689
+ 21/108 [====>.........................] - ETA: 7:37 - loss: 13.5731 - yolo_layer_1_loss: 3.7228 - yolo_layer_2_loss: 3.9807 - yolo_layer_3_loss: 5.8695
+ 22/108 [=====>........................] - ETA: 7:34 - loss: 13.4945 - yolo_layer_1_loss: 3.6988 - yolo_layer_2_loss: 3.9898 - yolo_layer_3_loss: 5.8059
+ 23/108 [=====>........................] - ETA: 7:26 - loss: 13.4553 - yolo_layer_1_loss: 3.6275 - yolo_layer_2_loss: 3.9588 - yolo_layer_3_loss: 5.8690
+ 24/108 [=====>........................] - ETA: 7:18 - loss: 13.4345 - yolo_layer_1_loss: 3.6046 - yolo_layer_2_loss: 3.9376 - yolo_layer_3_loss: 5.8922
+ 25/108 [=====>........................] - ETA: 7:10 - loss: 13.4567 - yolo_layer_1_loss: 3.5592 - yolo_layer_2_loss: 3.9962 - yolo_layer_3_loss: 5.9013
+ 26/108 [======>.......................] - ETA: 7:03 - loss: 13.5412 - yolo_layer_1_loss: 3.6278 - yolo_layer_2_loss: 4.0117 - yolo_layer_3_loss: 5.9016
+ 27/108 [======>.......................] - ETA: 6:56 - loss: 13.5575 - yolo_layer_1_loss: 3.5746 - yolo_layer_2_loss: 3.9758 - yolo_layer_3_loss: 6.0071
+ 28/108 [======>.......................] - ETA: 6:49 - loss: 13.6067 - yolo_layer_1_loss: 3.5451 - yolo_layer_2_loss: 3.9784 - yolo_layer_3_loss: 6.0832
+ 29/108 [=======>......................] - ETA: 6:42 - loss: 13.5955 - yolo_layer_1_loss: 3.6095 - yolo_layer_2_loss: 3.9538 - yolo_layer_3_loss: 6.0323
+ 30/108 [=======>......................] - ETA: 6:36 - loss: 13.6489 - yolo_layer_1_loss: 3.5769 - yolo_layer_2_loss: 4.0193 - yolo_layer_3_loss: 6.0526
+ 31/108 [=======>......................] - ETA: 6:29 - loss: 13.6775 - yolo_layer_1_loss: 3.6441 - yolo_layer_2_loss: 4.0127 - yolo_layer_3_loss: 6.0208
+ 32/108 [=======>......................] - ETA: 6:23 - loss: 13.6530 - yolo_layer_1_loss: 3.5913 - yolo_layer_2_loss: 4.0546 - yolo_layer_3_loss: 6.0071
+ 33/108 [========>.....................] - ETA: 6:16 - loss: 13.6152 - yolo_layer_1_loss: 3.5755 - yolo_layer_2_loss: 4.0512 - yolo_layer_3_loss: 5.9886
+ 34/108 [========>.....................] - ETA: 6:10 - loss: 13.5227 - yolo_layer_1_loss: 3.5380 - yolo_layer_2_loss: 4.0301 - yolo_layer_3_loss: 5.9545
+ 35/108 [========>.....................] - ETA: 6:04 - loss: 13.4966 - yolo_layer_1_loss: 3.5831 - yolo_layer_2_loss: 4.0207 - yolo_layer_3_loss: 5.8928
+ 36/108 [=========>....................] - ETA: 5:59 - loss: 13.4350 - yolo_layer_1_loss: 3.5624 - yolo_layer_2_loss: 4.0105 - yolo_layer_3_loss: 5.8621
+ 37/108 [=========>....................] - ETA: 5:53 - loss: 13.4544 - yolo_layer_1_loss: 3.5234 - yolo_layer_2_loss: 4.0873 - yolo_layer_3_loss: 5.8436resizing:  416 416
+
+ 38/108 [=========>....................] - ETA: 5:48 - loss: 13.4105 - yolo_layer_1_loss: 3.5267 - yolo_layer_2_loss: 4.0678 - yolo_layer_3_loss: 5.8159
+ 39/108 [=========>....................] - ETA: 5:42 - loss: 13.4586 - yolo_layer_1_loss: 3.5116 - yolo_layer_2_loss: 4.1206 - yolo_layer_3_loss: 5.8264
+ 40/108 [==========>...................] - ETA: 5:36 - loss: 13.3786 - yolo_layer_1_loss: 3.4840 - yolo_layer_2_loss: 4.0938 - yolo_layer_3_loss: 5.8008
+ 41/108 [==========>...................] - ETA: 5:31 - loss: 13.4176 - yolo_layer_1_loss: 3.5381 - yolo_layer_2_loss: 4.0763 - yolo_layer_3_loss: 5.8032
+ 42/108 [==========>...................] - ETA: 5:25 - loss: 13.5364 - yolo_layer_1_loss: 3.5817 - yolo_layer_2_loss: 4.1191 - yolo_layer_3_loss: 5.8356
+ 43/108 [==========>...................] - ETA: 5:20 - loss: 13.6039 - yolo_layer_1_loss: 3.5497 - yolo_layer_2_loss: 4.1720 - yolo_layer_3_loss: 5.8822
+ 44/108 [===========>..................] - ETA: 5:14 - loss: 13.5530 - yolo_layer_1_loss: 3.4889 - yolo_layer_2_loss: 4.1898 - yolo_layer_3_loss: 5.8743
+ 45/108 [===========>..................] - ETA: 5:09 - loss: 13.5135 - yolo_layer_1_loss: 3.4666 - yolo_layer_2_loss: 4.1697 - yolo_layer_3_loss: 5.8772
+ 46/108 [===========>..................] - ETA: 5:03 - loss: 13.5478 - yolo_layer_1_loss: 3.4669 - yolo_layer_2_loss: 4.2241 - yolo_layer_3_loss: 5.8568
+ 47/108 [============>.................] - ETA: 4:59 - loss: 13.5409 - yolo_layer_1_loss: 3.4899 - yolo_layer_2_loss: 4.1910 - yolo_layer_3_loss: 5.8600
+ 48/108 [============>.................] - ETA: 4:54 - loss: 13.6089 - yolo_layer_1_loss: 3.4841 - yolo_layer_2_loss: 4.2319 - yolo_layer_3_loss: 5.8929resizing:  288 288
+
+ 49/108 [============>.................] - ETA: 4:50 - loss: 13.6168 - yolo_layer_1_loss: 3.4710 - yolo_layer_2_loss: 4.2140 - yolo_layer_3_loss: 5.9319
+ 50/108 [============>.................] - ETA: 4:45 - loss: 13.6496 - yolo_layer_1_loss: 3.4663 - yolo_layer_2_loss: 4.2372 - yolo_layer_3_loss: 5.9461resizing:  416 416
+
+ 51/108 [=============>................] - ETA: 4:40 - loss: 13.6007 - yolo_layer_1_loss: 3.4465 - yolo_layer_2_loss: 4.2045 - yolo_layer_3_loss: 5.9497
+ 52/108 [=============>................] - ETA: 4:36 - loss: 13.5315 - yolo_layer_1_loss: 3.4424 - yolo_layer_2_loss: 4.1974 - yolo_layer_3_loss: 5.8917
+ 53/108 [=============>................] - ETA: 4:31 - loss: 13.5068 - yolo_layer_1_loss: 3.4275 - yolo_layer_2_loss: 4.2118 - yolo_layer_3_loss: 5.8675
+ 54/108 [==============>...............] - ETA: 4:26 - loss: 13.5767 - yolo_layer_1_loss: 3.4474 - yolo_layer_2_loss: 4.2365 - yolo_layer_3_loss: 5.8928
+ 55/108 [==============>...............] - ETA: 4:21 - loss: 13.5771 - yolo_layer_1_loss: 3.4449 - yolo_layer_2_loss: 4.2426 - yolo_layer_3_loss: 5.8896
+ 56/108 [==============>...............] - ETA: 4:17 - loss: 13.5849 - yolo_layer_1_loss: 3.4900 - yolo_layer_2_loss: 4.2267 - yolo_layer_3_loss: 5.8682
+ 57/108 [==============>...............] - ETA: 4:12 - loss: 13.5449 - yolo_layer_1_loss: 3.4667 - yolo_layer_2_loss: 4.2296 - yolo_layer_3_loss: 5.8487
+ 58/108 [===============>..............] - ETA: 4:06 - loss: 13.5386 - yolo_layer_1_loss: 3.4384 - yolo_layer_2_loss: 4.2454 - yolo_layer_3_loss: 5.8548
+ 59/108 [===============>..............] - ETA: 3:59 - loss: 13.4651 - yolo_layer_1_loss: 3.4095 - yolo_layer_2_loss: 4.2215 - yolo_layer_3_loss: 5.8341resizing:  416 416
+
+ 60/108 [===============>..............] - ETA: 3:55 - loss: 13.4350 - yolo_layer_1_loss: 3.3986 - yolo_layer_2_loss: 4.2273 - yolo_layer_3_loss: 5.8091
+ 61/108 [===============>..............] - ETA: 3:50 - loss: 13.5288 - yolo_layer_1_loss: 3.3943 - yolo_layer_2_loss: 4.2950 - yolo_layer_3_loss: 5.8395
+ 62/108 [================>.............] - ETA: 3:45 - loss: 13.5488 - yolo_layer_1_loss: 3.4050 - yolo_layer_2_loss: 4.3045 - yolo_layer_3_loss: 5.8393
+ 63/108 [================>.............] - ETA: 3:41 - loss: 13.5077 - yolo_layer_1_loss: 3.3886 - yolo_layer_2_loss: 4.2854 - yolo_layer_3_loss: 5.8336
+ 64/108 [================>.............] - ETA: 3:36 - loss: 13.5022 - yolo_layer_1_loss: 3.3806 - yolo_layer_2_loss: 4.3127 - yolo_layer_3_loss: 5.8088
+ 65/108 [=================>............] - ETA: 3:31 - loss: 13.4833 - yolo_layer_1_loss: 3.3800 - yolo_layer_2_loss: 4.3168 - yolo_layer_3_loss: 5.7864
+ 66/108 [=================>............] - ETA: 3:26 - loss: 13.4673 - yolo_layer_1_loss: 3.3796 - yolo_layer_2_loss: 4.3107 - yolo_layer_3_loss: 5.7770
+ 67/108 [=================>............] - ETA: 3:21 - loss: 13.5251 - yolo_layer_1_loss: 3.4104 - yolo_layer_2_loss: 4.2975 - yolo_layer_3_loss: 5.8172
+ 68/108 [=================>............] - ETA: 3:17 - loss: 13.5250 - yolo_layer_1_loss: 3.3968 - yolo_layer_2_loss: 4.3277 - yolo_layer_3_loss: 5.8005
+ 69/108 [==================>...........] - ETA: 3:12 - loss: 13.5029 - yolo_layer_1_loss: 3.4082 - yolo_layer_2_loss: 4.3164 - yolo_layer_3_loss: 5.7783
+ 70/108 [==================>...........] - ETA: 3:07 - loss: 13.5049 - yolo_layer_1_loss: 3.4263 - yolo_layer_2_loss: 4.3166 - yolo_layer_3_loss: 5.7621
+ 71/108 [==================>...........] - ETA: 3:02 - loss: 13.4206 - yolo_layer_1_loss: 3.4104 - yolo_layer_2_loss: 4.2887 - yolo_layer_3_loss: 5.7215
+ 72/108 [===================>..........] - ETA: 2:58 - loss: 13.4253 - yolo_layer_1_loss: 3.4152 - yolo_layer_2_loss: 4.2742 - yolo_layer_3_loss: 5.7359
+ 73/108 [===================>..........] - ETA: 2:53 - loss: 13.4145 - yolo_layer_1_loss: 3.3990 - yolo_layer_2_loss: 4.2565 - yolo_layer_3_loss: 5.7590
+ 74/108 [===================>..........] - ETA: 2:48 - loss: 13.4058 - yolo_layer_1_loss: 3.3970 - yolo_layer_2_loss: 4.2651 - yolo_layer_3_loss: 5.7437
+ 75/108 [===================>..........] - ETA: 2:43 - loss: 13.3906 - yolo_layer_1_loss: 3.3798 - yolo_layer_2_loss: 4.2599 - yolo_layer_3_loss: 5.7509
+ 76/108 [====================>.........] - ETA: 2:38 - loss: 13.3869 - yolo_layer_1_loss: 3.3717 - yolo_layer_2_loss: 4.2515 - yolo_layer_3_loss: 5.7637
+ 77/108 [====================>.........] - ETA: 2:33 - loss: 13.4317 - yolo_layer_1_loss: 3.3870 - yolo_layer_2_loss: 4.2431 - yolo_layer_3_loss: 5.8017
+ 78/108 [====================>.........] - ETA: 2:28 - loss: 13.3954 - yolo_layer_1_loss: 3.3640 - yolo_layer_2_loss: 4.2162 - yolo_layer_3_loss: 5.8151
+ 79/108 [====================>.........] - ETA: 2:23 - loss: 13.4001 - yolo_layer_1_loss: 3.3693 - yolo_layer_2_loss: 4.2252 - yolo_layer_3_loss: 5.8055
+ 80/108 [=====================>........] - ETA: 2:18 - loss: 13.3636 - yolo_layer_1_loss: 3.3659 - yolo_layer_2_loss: 4.2111 - yolo_layer_3_loss: 5.7866
+ 81/108 [=====================>........] - ETA: 2:14 - loss: 13.3276 - yolo_layer_1_loss: 3.3673 - yolo_layer_2_loss: 4.2106 - yolo_layer_3_loss: 5.7498
+ 82/108 [=====================>........] - ETA: 2:09 - loss: 13.2965 - yolo_layer_1_loss: 3.3581 - yolo_layer_2_loss: 4.1894 - yolo_layer_3_loss: 5.7491
+ 83/108 [======================>.......] - ETA: 2:04 - loss: 13.2765 - yolo_layer_1_loss: 3.3483 - yolo_layer_2_loss: 4.1782 - yolo_layer_3_loss: 5.7501
+ 84/108 [======================>.......] - ETA: 1:59 - loss: 13.2850 - yolo_layer_1_loss: 3.3451 - yolo_layer_2_loss: 4.1749 - yolo_layer_3_loss: 5.7649
+ 85/108 [======================>.......] - ETA: 1:54 - loss: 13.2650 - yolo_layer_1_loss: 3.3388 - yolo_layer_2_loss: 4.1706 - yolo_layer_3_loss: 5.7556
+ 86/108 [======================>.......] - ETA: 1:49 - loss: 13.2761 - yolo_layer_1_loss: 3.3346 - yolo_layer_2_loss: 4.1804 - yolo_layer_3_loss: 5.7610
+ 87/108 [=======================>......] - ETA: 1:44 - loss: 13.2934 - yolo_layer_1_loss: 3.3297 - yolo_layer_2_loss: 4.2010 - yolo_layer_3_loss: 5.7627
+ 88/108 [=======================>......] - ETA: 1:39 - loss: 13.2699 - yolo_layer_1_loss: 3.3197 - yolo_layer_2_loss: 4.1952 - yolo_layer_3_loss: 5.7551
+ 89/108 [=======================>......] - ETA: 1:34 - loss: 13.2600 - yolo_layer_1_loss: 3.3094 - yolo_layer_2_loss: 4.1824 - yolo_layer_3_loss: 5.7682
+ 90/108 [========================>.....] - ETA: 1:29 - loss: 13.2463 - yolo_layer_1_loss: 3.3168 - yolo_layer_2_loss: 4.1684 - yolo_layer_3_loss: 5.7612
+ 91/108 [========================>.....] - ETA: 1:24 - loss: 13.2030 - yolo_layer_1_loss: 3.3100 - yolo_layer_2_loss: 4.1540 - yolo_layer_3_loss: 5.7390resizing:  288 288
+
+ 92/108 [========================>.....] - ETA: 1:19 - loss: 13.2389 - yolo_layer_1_loss: 3.3434 - yolo_layer_2_loss: 4.1392 - yolo_layer_3_loss: 5.7564
+ 93/108 [========================>.....] - ETA: 1:14 - loss: 13.2098 - yolo_layer_1_loss: 3.3364 - yolo_layer_2_loss: 4.1286 - yolo_layer_3_loss: 5.7448
+ 94/108 [=========================>....] - ETA: 1:10 - loss: 13.1918 - yolo_layer_1_loss: 3.3327 - yolo_layer_2_loss: 4.1300 - yolo_layer_3_loss: 5.7292
+ 95/108 [=========================>....] - ETA: 1:05 - loss: 13.1997 - yolo_layer_1_loss: 3.3391 - yolo_layer_2_loss: 4.1403 - yolo_layer_3_loss: 5.7203resizing:  288 288
+
+ 96/108 [=========================>....] - ETA: 1:00 - loss: 13.1993 - yolo_layer_1_loss: 3.3342 - yolo_layer_2_loss: 4.1432 - yolo_layer_3_loss: 5.7220
+ 97/108 [=========================>....] - ETA: 55s - loss: 13.1719 - yolo_layer_1_loss: 3.3254 - yolo_layer_2_loss: 4.1343 - yolo_layer_3_loss: 5.7122 resizing:  416 416
+
+ 98/108 [==========================>...] - ETA: 50s - loss: 13.2120 - yolo_layer_1_loss: 3.3553 - yolo_layer_2_loss: 4.1320 - yolo_layer_3_loss: 5.7247resizing:  384 384
+
+ 99/108 [==========================>...] - ETA: 45s - loss: 13.2206 - yolo_layer_1_loss: 3.3576 - yolo_layer_2_loss: 4.1422 - yolo_layer_3_loss: 5.7208
+100/108 [==========================>...] - ETA: 40s - loss: 13.2155 - yolo_layer_1_loss: 3.3485 - yolo_layer_2_loss: 4.1532 - yolo_layer_3_loss: 5.7138
+101/108 [===========================>..] - ETA: 34s - loss: 13.2465 - yolo_layer_1_loss: 3.3640 - yolo_layer_2_loss: 4.1381 - yolo_layer_3_loss: 5.7444
+102/108 [===========================>..] - ETA: 29s - loss: 13.2163 - yolo_layer_1_loss: 3.3338 - yolo_layer_2_loss: 4.1296 - yolo_layer_3_loss: 5.7529
+103/108 [===========================>..] - ETA: 24s - loss: 13.1715 - yolo_layer_1_loss: 3.3106 - yolo_layer_2_loss: 4.1133 - yolo_layer_3_loss: 5.7476
+104/108 [===========================>..] - ETA: 19s - loss: 13.1335 - yolo_layer_1_loss: 3.2947 - yolo_layer_2_loss: 4.0999 - yolo_layer_3_loss: 5.7389
+105/108 [============================>.] - ETA: 14s - loss: 13.1738 - yolo_layer_1_loss: 3.3243 - yolo_layer_2_loss: 4.1077 - yolo_layer_3_loss: 5.7418
+106/108 [============================>.] - ETA: 9s - loss: 13.1386 - yolo_layer_1_loss: 3.3047 - yolo_layer_2_loss: 4.0922 - yolo_layer_3_loss: 5.7417 
+107/108 [============================>.] - ETA: 4s - loss: 13.1260 - yolo_layer_1_loss: 3.2911 - yolo_layer_2_loss: 4.0795 - yolo_layer_3_loss: 5.7554resizing:  416 416
+
+108/108 [==============================] - 530s 5s/step - loss: 13.1111 - yolo_layer_1_loss: 3.2822 - yolo_layer_2_loss: 4.0723 - yolo_layer_3_loss: 5.7567
+
+Epoch 00004: loss did not improve from 13.00647
+Epoch 5/50
+
+  1/108 [..............................] - ETA: 9:02 - loss: 14.9120 - yolo_layer_1_loss: 4.0617 - yolo_layer_2_loss: 5.3724 - yolo_layer_3_loss: 5.4779
+  2/108 [..............................] - ETA: 9:02 - loss: 14.4939 - yolo_layer_1_loss: 3.3087 - yolo_layer_2_loss: 5.4747 - yolo_layer_3_loss: 5.7105
+  3/108 [..............................] - ETA: 8:54 - loss: 14.0669 - yolo_layer_1_loss: 3.4129 - yolo_layer_2_loss: 5.5350 - yolo_layer_3_loss: 5.1191
+  4/108 [>.............................] - ETA: 8:49 - loss: 14.6216 - yolo_layer_1_loss: 4.2392 - yolo_layer_2_loss: 5.1155 - yolo_layer_3_loss: 5.2668
+  5/108 [>.............................] - ETA: 8:46 - loss: 14.4298 - yolo_layer_1_loss: 4.0752 - yolo_layer_2_loss: 5.1963 - yolo_layer_3_loss: 5.1583
+  6/108 [>.............................] - ETA: 8:42 - loss: 14.7271 - yolo_layer_1_loss: 3.9944 - yolo_layer_2_loss: 5.0064 - yolo_layer_3_loss: 5.7263
+  7/108 [>.............................] - ETA: 8:37 - loss: 14.5543 - yolo_layer_1_loss: 4.2003 - yolo_layer_2_loss: 4.7609 - yolo_layer_3_loss: 5.5931
+  8/108 [=>............................] - ETA: 8:33 - loss: 13.9739 - yolo_layer_1_loss: 4.1507 - yolo_layer_2_loss: 4.5372 - yolo_layer_3_loss: 5.2860
+  9/108 [=>............................] - ETA: 8:28 - loss: 14.0455 - yolo_layer_1_loss: 3.9966 - yolo_layer_2_loss: 4.5802 - yolo_layer_3_loss: 5.4687
+ 10/108 [=>............................] - ETA: 8:23 - loss: 13.7681 - yolo_layer_1_loss: 3.9179 - yolo_layer_2_loss: 4.5315 - yolo_layer_3_loss: 5.3187
+ 11/108 [==>...........................] - ETA: 8:18 - loss: 14.2153 - yolo_layer_1_loss: 3.9569 - yolo_layer_2_loss: 4.7114 - yolo_layer_3_loss: 5.5470
+ 12/108 [==>...........................] - ETA: 8:13 - loss: 14.0523 - yolo_layer_1_loss: 3.8789 - yolo_layer_2_loss: 4.6823 - yolo_layer_3_loss: 5.4910
+ 13/108 [==>...........................] - ETA: 8:08 - loss: 14.1858 - yolo_layer_1_loss: 3.8857 - yolo_layer_2_loss: 4.5341 - yolo_layer_3_loss: 5.7660resizing:  416 416
+
+ 14/108 [==>...........................] - ETA: 8:03 - loss: 14.2894 - yolo_layer_1_loss: 3.9741 - yolo_layer_2_loss: 4.7217 - yolo_layer_3_loss: 5.5936
+ 15/108 [===>..........................] - ETA: 7:57 - loss: 14.5510 - yolo_layer_1_loss: 4.0450 - yolo_layer_2_loss: 4.8184 - yolo_layer_3_loss: 5.6876
+ 16/108 [===>..........................] - ETA: 7:52 - loss: 14.1939 - yolo_layer_1_loss: 3.8986 - yolo_layer_2_loss: 4.7420 - yolo_layer_3_loss: 5.5534resizing:  480 480
+
+ 17/108 [===>..........................] - ETA: 7:47 - loss: 14.1485 - yolo_layer_1_loss: 3.7947 - yolo_layer_2_loss: 4.7259 - yolo_layer_3_loss: 5.6279
+ 18/108 [====>.........................] - ETA: 7:42 - loss: 14.3098 - yolo_layer_1_loss: 3.7418 - yolo_layer_2_loss: 4.9120 - yolo_layer_3_loss: 5.6560
+ 19/108 [====>.........................] - ETA: 7:37 - loss: 14.2133 - yolo_layer_1_loss: 3.7778 - yolo_layer_2_loss: 4.7932 - yolo_layer_3_loss: 5.6424
+ 20/108 [====>.........................] - ETA: 7:32 - loss: 14.0122 - yolo_layer_1_loss: 3.7074 - yolo_layer_2_loss: 4.6972 - yolo_layer_3_loss: 5.6076resizing:  480 480
+
+ 21/108 [====>.........................] - ETA: 7:27 - loss: 13.8998 - yolo_layer_1_loss: 3.6439 - yolo_layer_2_loss: 4.6162 - yolo_layer_3_loss: 5.6397
+ 22/108 [=====>........................] - ETA: 7:22 - loss: 13.9397 - yolo_layer_1_loss: 3.6599 - yolo_layer_2_loss: 4.5509 - yolo_layer_3_loss: 5.7289
+ 23/108 [=====>........................] - ETA: 7:18 - loss: 13.9546 - yolo_layer_1_loss: 3.7222 - yolo_layer_2_loss: 4.4929 - yolo_layer_3_loss: 5.7394
+ 24/108 [=====>........................] - ETA: 7:13 - loss: 14.0011 - yolo_layer_1_loss: 3.7315 - yolo_layer_2_loss: 4.5614 - yolo_layer_3_loss: 5.7081
+ 25/108 [=====>........................] - ETA: 7:08 - loss: 13.8313 - yolo_layer_1_loss: 3.6518 - yolo_layer_2_loss: 4.4716 - yolo_layer_3_loss: 5.7079
+ 26/108 [======>.......................] - ETA: 7:07 - loss: 13.9376 - yolo_layer_1_loss: 3.7492 - yolo_layer_2_loss: 4.4257 - yolo_layer_3_loss: 5.7627
+ 27/108 [======>.......................] - ETA: 7:05 - loss: 13.7881 - yolo_layer_1_loss: 3.6593 - yolo_layer_2_loss: 4.3534 - yolo_layer_3_loss: 5.7754
+ 28/108 [======>.......................] - ETA: 7:03 - loss: 13.6365 - yolo_layer_1_loss: 3.6120 - yolo_layer_2_loss: 4.3258 - yolo_layer_3_loss: 5.6987
+ 29/108 [=======>......................] - ETA: 7:01 - loss: 13.7488 - yolo_layer_1_loss: 3.5872 - yolo_layer_2_loss: 4.4076 - yolo_layer_3_loss: 5.7540
+ 30/108 [=======>......................] - ETA: 6:58 - loss: 13.6707 - yolo_layer_1_loss: 3.5779 - yolo_layer_2_loss: 4.3786 - yolo_layer_3_loss: 5.7142
+ 31/108 [=======>......................] - ETA: 6:56 - loss: 13.7919 - yolo_layer_1_loss: 3.6475 - yolo_layer_2_loss: 4.4678 - yolo_layer_3_loss: 5.6766
+ 32/108 [=======>......................] - ETA: 6:53 - loss: 13.7250 - yolo_layer_1_loss: 3.6371 - yolo_layer_2_loss: 4.4506 - yolo_layer_3_loss: 5.6373
+ 33/108 [========>.....................] - ETA: 6:50 - loss: 13.7356 - yolo_layer_1_loss: 3.6356 - yolo_layer_2_loss: 4.4463 - yolo_layer_3_loss: 5.6537
+ 34/108 [========>.....................] - ETA: 6:46 - loss: 13.7996 - yolo_layer_1_loss: 3.6061 - yolo_layer_2_loss: 4.4571 - yolo_layer_3_loss: 5.7363
+ 35/108 [========>.....................] - ETA: 6:43 - loss: 13.8095 - yolo_layer_1_loss: 3.6079 - yolo_layer_2_loss: 4.4306 - yolo_layer_3_loss: 5.7711resizing:  352 352
+
+ 36/108 [=========>....................] - ETA: 6:40 - loss: 13.8990 - yolo_layer_1_loss: 3.6122 - yolo_layer_2_loss: 4.4761 - yolo_layer_3_loss: 5.8107
+ 37/108 [=========>....................] - ETA: 6:36 - loss: 14.0691 - yolo_layer_1_loss: 3.7818 - yolo_layer_2_loss: 4.4985 - yolo_layer_3_loss: 5.7888
+ 38/108 [=========>....................] - ETA: 6:27 - loss: 13.9904 - yolo_layer_1_loss: 3.7324 - yolo_layer_2_loss: 4.5145 - yolo_layer_3_loss: 5.7436
+ 39/108 [=========>....................] - ETA: 6:23 - loss: 13.9491 - yolo_layer_1_loss: 3.7240 - yolo_layer_2_loss: 4.4986 - yolo_layer_3_loss: 5.7265
+ 40/108 [==========>...................] - ETA: 6:19 - loss: 13.9013 - yolo_layer_1_loss: 3.6969 - yolo_layer_2_loss: 4.4755 - yolo_layer_3_loss: 5.7290
+ 41/108 [==========>...................] - ETA: 6:11 - loss: 13.8474 - yolo_layer_1_loss: 3.6642 - yolo_layer_2_loss: 4.4509 - yolo_layer_3_loss: 5.7323
+ 42/108 [==========>...................] - ETA: 6:03 - loss: 13.7535 - yolo_layer_1_loss: 3.6291 - yolo_layer_2_loss: 4.4294 - yolo_layer_3_loss: 5.6951
+ 43/108 [==========>...................] - ETA: 5:56 - loss: 13.7556 - yolo_layer_1_loss: 3.6583 - yolo_layer_2_loss: 4.4021 - yolo_layer_3_loss: 5.6951
+ 44/108 [===========>..................] - ETA: 5:48 - loss: 13.6670 - yolo_layer_1_loss: 3.6201 - yolo_layer_2_loss: 4.3503 - yolo_layer_3_loss: 5.6966
+ 45/108 [===========>..................] - ETA: 5:40 - loss: 13.5908 - yolo_layer_1_loss: 3.6243 - yolo_layer_2_loss: 4.2908 - yolo_layer_3_loss: 5.6757
+ 46/108 [===========>..................] - ETA: 5:33 - loss: 13.6644 - yolo_layer_1_loss: 3.6485 - yolo_layer_2_loss: 4.2705 - yolo_layer_3_loss: 5.7454
+ 47/108 [============>.................] - ETA: 5:26 - loss: 13.6251 - yolo_layer_1_loss: 3.6232 - yolo_layer_2_loss: 4.2451 - yolo_layer_3_loss: 5.7568
+ 48/108 [============>.................] - ETA: 5:19 - loss: 13.5682 - yolo_layer_1_loss: 3.5774 - yolo_layer_2_loss: 4.2021 - yolo_layer_3_loss: 5.7888
+ 49/108 [============>.................] - ETA: 5:12 - loss: 13.5895 - yolo_layer_1_loss: 3.5877 - yolo_layer_2_loss: 4.1844 - yolo_layer_3_loss: 5.8173
+ 50/108 [============>.................] - ETA: 5:05 - loss: 13.5169 - yolo_layer_1_loss: 3.5762 - yolo_layer_2_loss: 4.1539 - yolo_layer_3_loss: 5.7869
+ 51/108 [=============>................] - ETA: 4:59 - loss: 13.4634 - yolo_layer_1_loss: 3.5353 - yolo_layer_2_loss: 4.1166 - yolo_layer_3_loss: 5.8114
+ 52/108 [=============>................] - ETA: 4:52 - loss: 13.4391 - yolo_layer_1_loss: 3.5176 - yolo_layer_2_loss: 4.1232 - yolo_layer_3_loss: 5.7984resizing:  352 352
+
+ 53/108 [=============>................] - ETA: 4:46 - loss: 13.4657 - yolo_layer_1_loss: 3.4978 - yolo_layer_2_loss: 4.1495 - yolo_layer_3_loss: 5.8184
+ 54/108 [==============>...............] - ETA: 4:39 - loss: 13.4687 - yolo_layer_1_loss: 3.5176 - yolo_layer_2_loss: 4.1423 - yolo_layer_3_loss: 5.8088
+ 55/108 [==============>...............] - ETA: 4:33 - loss: 13.4800 - yolo_layer_1_loss: 3.5273 - yolo_layer_2_loss: 4.1297 - yolo_layer_3_loss: 5.8230
+ 56/108 [==============>...............] - ETA: 4:27 - loss: 13.4292 - yolo_layer_1_loss: 3.4919 - yolo_layer_2_loss: 4.1340 - yolo_layer_3_loss: 5.8033
+ 57/108 [==============>...............] - ETA: 4:21 - loss: 13.4545 - yolo_layer_1_loss: 3.4684 - yolo_layer_2_loss: 4.1651 - yolo_layer_3_loss: 5.8209
+ 58/108 [===============>..............] - ETA: 4:15 - loss: 13.4094 - yolo_layer_1_loss: 3.4546 - yolo_layer_2_loss: 4.1469 - yolo_layer_3_loss: 5.8079
+ 59/108 [===============>..............] - ETA: 4:09 - loss: 13.3981 - yolo_layer_1_loss: 3.4282 - yolo_layer_2_loss: 4.1191 - yolo_layer_3_loss: 5.8509resizing:  448 448
+
+ 60/108 [===============>..............] - ETA: 4:03 - loss: 13.4105 - yolo_layer_1_loss: 3.4110 - yolo_layer_2_loss: 4.1357 - yolo_layer_3_loss: 5.8638resizing:  288 288
+
+ 61/108 [===============>..............] - ETA: 3:57 - loss: 13.3657 - yolo_layer_1_loss: 3.4006 - yolo_layer_2_loss: 4.1162 - yolo_layer_3_loss: 5.8489
+ 62/108 [================>.............] - ETA: 3:51 - loss: 13.3558 - yolo_layer_1_loss: 3.4223 - yolo_layer_2_loss: 4.0989 - yolo_layer_3_loss: 5.8346
+ 63/108 [================>.............] - ETA: 3:45 - loss: 13.3693 - yolo_layer_1_loss: 3.4089 - yolo_layer_2_loss: 4.1130 - yolo_layer_3_loss: 5.8475
+ 64/108 [================>.............] - ETA: 3:40 - loss: 13.3639 - yolo_layer_1_loss: 3.3804 - yolo_layer_2_loss: 4.0974 - yolo_layer_3_loss: 5.8860
+ 65/108 [=================>............] - ETA: 3:34 - loss: 13.2988 - yolo_layer_1_loss: 3.3559 - yolo_layer_2_loss: 4.0754 - yolo_layer_3_loss: 5.8676
+ 66/108 [=================>............] - ETA: 3:28 - loss: 13.2863 - yolo_layer_1_loss: 3.3548 - yolo_layer_2_loss: 4.0615 - yolo_layer_3_loss: 5.8700
+ 67/108 [=================>............] - ETA: 3:23 - loss: 13.2809 - yolo_layer_1_loss: 3.3433 - yolo_layer_2_loss: 4.0532 - yolo_layer_3_loss: 5.8843
+ 68/108 [=================>............] - ETA: 3:17 - loss: 13.2772 - yolo_layer_1_loss: 3.3252 - yolo_layer_2_loss: 4.0313 - yolo_layer_3_loss: 5.9207
+ 69/108 [==================>...........] - ETA: 3:13 - loss: 13.3244 - yolo_layer_1_loss: 3.3514 - yolo_layer_2_loss: 4.0474 - yolo_layer_3_loss: 5.9256
+ 70/108 [==================>...........] - ETA: 3:07 - loss: 13.3142 - yolo_layer_1_loss: 3.3442 - yolo_layer_2_loss: 4.0442 - yolo_layer_3_loss: 5.9258
+ 71/108 [==================>...........] - ETA: 3:01 - loss: 13.2741 - yolo_layer_1_loss: 3.3260 - yolo_layer_2_loss: 4.0267 - yolo_layer_3_loss: 5.9215resizing:  384 384
+resizing:  288 288
+
+ 72/108 [===================>..........] - ETA: 2:56 - loss: 13.2412 - yolo_layer_1_loss: 3.3129 - yolo_layer_2_loss: 4.0140 - yolo_layer_3_loss: 5.9144
+ 73/108 [===================>..........] - ETA: 2:50 - loss: 13.2087 - yolo_layer_1_loss: 3.2951 - yolo_layer_2_loss: 4.0116 - yolo_layer_3_loss: 5.9021
+ 74/108 [===================>..........] - ETA: 2:45 - loss: 13.1805 - yolo_layer_1_loss: 3.2815 - yolo_layer_2_loss: 4.0080 - yolo_layer_3_loss: 5.8909
+ 75/108 [===================>..........] - ETA: 2:40 - loss: 13.1744 - yolo_layer_1_loss: 3.2686 - yolo_layer_2_loss: 3.9938 - yolo_layer_3_loss: 5.9120resizing:  384 384
+
+ 76/108 [====================>.........] - ETA: 2:35 - loss: 13.2242 - yolo_layer_1_loss: 3.2982 - yolo_layer_2_loss: 4.0048 - yolo_layer_3_loss: 5.9212
+ 77/108 [====================>.........] - ETA: 2:30 - loss: 13.2180 - yolo_layer_1_loss: 3.2849 - yolo_layer_2_loss: 3.9941 - yolo_layer_3_loss: 5.9390
+ 78/108 [====================>.........] - ETA: 2:25 - loss: 13.2636 - yolo_layer_1_loss: 3.3040 - yolo_layer_2_loss: 4.0043 - yolo_layer_3_loss: 5.9552
+ 79/108 [====================>.........] - ETA: 2:20 - loss: 13.2370 - yolo_layer_1_loss: 3.3072 - yolo_layer_2_loss: 3.9912 - yolo_layer_3_loss: 5.9385
+ 80/108 [=====================>........] - ETA: 2:15 - loss: 13.2426 - yolo_layer_1_loss: 3.2962 - yolo_layer_2_loss: 3.9845 - yolo_layer_3_loss: 5.9618
+ 81/108 [=====================>........] - ETA: 2:10 - loss: 13.1967 - yolo_layer_1_loss: 3.2862 - yolo_layer_2_loss: 3.9728 - yolo_layer_3_loss: 5.9377
+ 82/108 [=====================>........] - ETA: 2:04 - loss: 13.1971 - yolo_layer_1_loss: 3.2741 - yolo_layer_2_loss: 3.9809 - yolo_layer_3_loss: 5.9421
+ 83/108 [======================>.......] - ETA: 1:59 - loss: 13.1529 - yolo_layer_1_loss: 3.2422 - yolo_layer_2_loss: 3.9594 - yolo_layer_3_loss: 5.9513
+ 84/108 [======================>.......] - ETA: 1:54 - loss: 13.1595 - yolo_layer_1_loss: 3.2316 - yolo_layer_2_loss: 3.9743 - yolo_layer_3_loss: 5.9536
+ 85/108 [======================>.......] - ETA: 1:49 - loss: 13.1370 - yolo_layer_1_loss: 3.2197 - yolo_layer_2_loss: 3.9723 - yolo_layer_3_loss: 5.9449
+ 86/108 [======================>.......] - ETA: 1:44 - loss: 13.1890 - yolo_layer_1_loss: 3.2734 - yolo_layer_2_loss: 3.9863 - yolo_layer_3_loss: 5.9293
+ 87/108 [=======================>......] - ETA: 1:39 - loss: 13.1680 - yolo_layer_1_loss: 3.2752 - yolo_layer_2_loss: 3.9769 - yolo_layer_3_loss: 5.9159
+ 88/108 [=======================>......] - ETA: 1:35 - loss: 13.1620 - yolo_layer_1_loss: 3.2679 - yolo_layer_2_loss: 3.9777 - yolo_layer_3_loss: 5.9163
+ 89/108 [=======================>......] - ETA: 1:30 - loss: 13.1830 - yolo_layer_1_loss: 3.2682 - yolo_layer_2_loss: 3.9855 - yolo_layer_3_loss: 5.9294
+ 90/108 [========================>.....] - ETA: 1:25 - loss: 13.1793 - yolo_layer_1_loss: 3.2489 - yolo_layer_2_loss: 3.9984 - yolo_layer_3_loss: 5.9320
+ 91/108 [========================>.....] - ETA: 1:20 - loss: 13.1576 - yolo_layer_1_loss: 3.2429 - yolo_layer_2_loss: 4.0005 - yolo_layer_3_loss: 5.9142resizing:  480 480
+
+ 92/108 [========================>.....] - ETA: 1:15 - loss: 13.1615 - yolo_layer_1_loss: 3.2445 - yolo_layer_2_loss: 3.9865 - yolo_layer_3_loss: 5.9305
+ 93/108 [========================>.....] - ETA: 1:11 - loss: 13.1615 - yolo_layer_1_loss: 3.2359 - yolo_layer_2_loss: 4.0110 - yolo_layer_3_loss: 5.9146
+ 94/108 [=========================>....] - ETA: 1:06 - loss: 13.1820 - yolo_layer_1_loss: 3.2319 - yolo_layer_2_loss: 4.0325 - yolo_layer_3_loss: 5.9176
+ 95/108 [=========================>....] - ETA: 1:01 - loss: 13.2187 - yolo_layer_1_loss: 3.2698 - yolo_layer_2_loss: 4.0268 - yolo_layer_3_loss: 5.9221
+ 96/108 [=========================>....] - ETA: 56s - loss: 13.2723 - yolo_layer_1_loss: 3.2936 - yolo_layer_2_loss: 4.0580 - yolo_layer_3_loss: 5.9207 
+ 97/108 [=========================>....] - ETA: 52s - loss: 13.2470 - yolo_layer_1_loss: 3.2913 - yolo_layer_2_loss: 4.0527 - yolo_layer_3_loss: 5.9030
+ 98/108 [==========================>...] - ETA: 47s - loss: 13.2673 - yolo_layer_1_loss: 3.2922 - yolo_layer_2_loss: 4.0627 - yolo_layer_3_loss: 5.9124
+ 99/108 [==========================>...] - ETA: 42s - loss: 13.2489 - yolo_layer_1_loss: 3.2882 - yolo_layer_2_loss: 4.0650 - yolo_layer_3_loss: 5.8957
+100/108 [==========================>...] - ETA: 37s - loss: 13.2332 - yolo_layer_1_loss: 3.2863 - yolo_layer_2_loss: 4.0584 - yolo_layer_3_loss: 5.8885
+101/108 [===========================>..] - ETA: 33s - loss: 13.2098 - yolo_layer_1_loss: 3.2901 - yolo_layer_2_loss: 4.0522 - yolo_layer_3_loss: 5.8676
+102/108 [===========================>..] - ETA: 28s - loss: 13.2244 - yolo_layer_1_loss: 3.2853 - yolo_layer_2_loss: 4.0725 - yolo_layer_3_loss: 5.8666
+103/108 [===========================>..] - ETA: 23s - loss: 13.2456 - yolo_layer_1_loss: 3.2972 - yolo_layer_2_loss: 4.0708 - yolo_layer_3_loss: 5.8775
+104/108 [===========================>..] - ETA: 19s - loss: 13.2471 - yolo_layer_1_loss: 3.3148 - yolo_layer_2_loss: 4.0741 - yolo_layer_3_loss: 5.8581
+105/108 [============================>.] - ETA: 14s - loss: 13.2381 - yolo_layer_1_loss: 3.3280 - yolo_layer_2_loss: 4.0692 - yolo_layer_3_loss: 5.8408
+106/108 [============================>.] - ETA: 9s - loss: 13.2684 - yolo_layer_1_loss: 3.3351 - yolo_layer_2_loss: 4.0874 - yolo_layer_3_loss: 5.8458 
+107/108 [============================>.] - ETA: 4s - loss: 13.2518 - yolo_layer_1_loss: 3.3314 - yolo_layer_2_loss: 4.0798 - yolo_layer_3_loss: 5.8406
+108/108 [==============================] - 524s 5s/step - loss: 13.2739 - yolo_layer_1_loss: 3.3304 - yolo_layer_2_loss: 4.0820 - yolo_layer_3_loss: 5.8616
+
+Epoch 00005: loss did not improve from 13.00647
+
+Epoch 00005: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-07.
+Epoch 6/50
+
+  1/108 [..............................] - ETA: 11:33 - loss: 11.8911 - yolo_layer_1_loss: 3.0617 - yolo_layer_2_loss: 5.0010 - yolo_layer_3_loss: 3.8283
+  2/108 [..............................] - ETA: 11:22 - loss: 11.6630 - yolo_layer_1_loss: 3.2089 - yolo_layer_2_loss: 4.6579 - yolo_layer_3_loss: 3.7962
+  3/108 [..............................] - ETA: 11:16 - loss: 12.4313 - yolo_layer_1_loss: 3.3194 - yolo_layer_2_loss: 4.6928 - yolo_layer_3_loss: 4.4191
+  4/108 [>.............................] - ETA: 11:08 - loss: 12.4713 - yolo_layer_1_loss: 3.7202 - yolo_layer_2_loss: 4.5179 - yolo_layer_3_loss: 4.2332
+  5/108 [>.............................] - ETA: 11:01 - loss: 12.5254 - yolo_layer_1_loss: 4.1539 - yolo_layer_2_loss: 4.2817 - yolo_layer_3_loss: 4.0898
+  6/108 [>.............................] - ETA: 10:56 - loss: 12.6680 - yolo_layer_1_loss: 3.9376 - yolo_layer_2_loss: 4.4700 - yolo_layer_3_loss: 4.2604
+  7/108 [>.............................] - ETA: 10:50 - loss: 12.8728 - yolo_layer_1_loss: 3.9159 - yolo_layer_2_loss: 4.3910 - yolo_layer_3_loss: 4.5659
+  8/108 [=>............................] - ETA: 10:43 - loss: 13.0462 - yolo_layer_1_loss: 4.0771 - yolo_layer_2_loss: 4.3782 - yolo_layer_3_loss: 4.5909
+  9/108 [=>............................] - ETA: 10:36 - loss: 13.3768 - yolo_layer_1_loss: 4.0711 - yolo_layer_2_loss: 4.4889 - yolo_layer_3_loss: 4.8169
+ 10/108 [=>............................] - ETA: 10:28 - loss: 13.1181 - yolo_layer_1_loss: 4.0307 - yolo_layer_2_loss: 4.3750 - yolo_layer_3_loss: 4.7124
+ 11/108 [==>...........................] - ETA: 10:23 - loss: 12.9658 - yolo_layer_1_loss: 4.0172 - yolo_layer_2_loss: 4.3460 - yolo_layer_3_loss: 4.6026
+ 12/108 [==>...........................] - ETA: 10:17 - loss: 13.0638 - yolo_layer_1_loss: 4.0357 - yolo_layer_2_loss: 4.3975 - yolo_layer_3_loss: 4.6305
+ 13/108 [==>...........................] - ETA: 10:10 - loss: 13.1046 - yolo_layer_1_loss: 4.1126 - yolo_layer_2_loss: 4.4352 - yolo_layer_3_loss: 4.5568resizing:  448 448
+
+ 14/108 [==>...........................] - ETA: 10:04 - loss: 13.2335 - yolo_layer_1_loss: 4.0290 - yolo_layer_2_loss: 4.5079 - yolo_layer_3_loss: 4.6966resizing:  352 352
+
+ 15/108 [===>..........................] - ETA: 9:57 - loss: 13.2859 - yolo_layer_1_loss: 3.9959 - yolo_layer_2_loss: 4.4880 - yolo_layer_3_loss: 4.8020 
+ 16/108 [===>..........................] - ETA: 9:51 - loss: 13.2469 - yolo_layer_1_loss: 3.9644 - yolo_layer_2_loss: 4.5080 - yolo_layer_3_loss: 4.7745resizing:  320 320
+
+ 17/108 [===>..........................] - ETA: 9:45 - loss: 13.2418 - yolo_layer_1_loss: 3.9014 - yolo_layer_2_loss: 4.5638 - yolo_layer_3_loss: 4.7766
+ 18/108 [====>.........................] - ETA: 9:38 - loss: 13.1737 - yolo_layer_1_loss: 3.8439 - yolo_layer_2_loss: 4.4562 - yolo_layer_3_loss: 4.8736
+ 19/108 [====>.........................] - ETA: 9:33 - loss: 13.1613 - yolo_layer_1_loss: 3.8446 - yolo_layer_2_loss: 4.4971 - yolo_layer_3_loss: 4.8197
+ 20/108 [====>.........................] - ETA: 9:27 - loss: 13.2660 - yolo_layer_1_loss: 3.8873 - yolo_layer_2_loss: 4.5403 - yolo_layer_3_loss: 4.8384
+ 21/108 [====>.........................] - ETA: 9:22 - loss: 13.2046 - yolo_layer_1_loss: 3.8838 - yolo_layer_2_loss: 4.4436 - yolo_layer_3_loss: 4.8772
+ 22/108 [=====>........................] - ETA: 9:15 - loss: 13.2505 - yolo_layer_1_loss: 3.9199 - yolo_layer_2_loss: 4.4323 - yolo_layer_3_loss: 4.8983
+ 23/108 [=====>........................] - ETA: 9:07 - loss: 13.1952 - yolo_layer_1_loss: 3.8511 - yolo_layer_2_loss: 4.4261 - yolo_layer_3_loss: 4.9180resizing:  352 352
+
+ 24/108 [=====>........................] - ETA: 8:52 - loss: 13.2733 - yolo_layer_1_loss: 3.8911 - yolo_layer_2_loss: 4.4139 - yolo_layer_3_loss: 4.9683
+ 25/108 [=====>........................] - ETA: 8:39 - loss: 13.2662 - yolo_layer_1_loss: 3.7638 - yolo_layer_2_loss: 4.4084 - yolo_layer_3_loss: 5.0939
+ 26/108 [======>.......................] - ETA: 8:24 - loss: 13.2361 - yolo_layer_1_loss: 3.6753 - yolo_layer_2_loss: 4.3998 - yolo_layer_3_loss: 5.1610
+ 27/108 [======>.......................] - ETA: 8:11 - loss: 13.1072 - yolo_layer_1_loss: 3.6027 - yolo_layer_2_loss: 4.3451 - yolo_layer_3_loss: 5.1595
+ 28/108 [======>.......................] - ETA: 7:58 - loss: 13.0806 - yolo_layer_1_loss: 3.5814 - yolo_layer_2_loss: 4.3099 - yolo_layer_3_loss: 5.1894
+ 29/108 [=======>......................] - ETA: 7:46 - loss: 12.9569 - yolo_layer_1_loss: 3.5359 - yolo_layer_2_loss: 4.2463 - yolo_layer_3_loss: 5.1748
+ 30/108 [=======>......................] - ETA: 7:34 - loss: 12.8188 - yolo_layer_1_loss: 3.4620 - yolo_layer_2_loss: 4.1911 - yolo_layer_3_loss: 5.1657
+ 31/108 [=======>......................] - ETA: 7:23 - loss: 12.6632 - yolo_layer_1_loss: 3.4049 - yolo_layer_2_loss: 4.1395 - yolo_layer_3_loss: 5.1188
+ 32/108 [=======>......................] - ETA: 7:12 - loss: 12.5869 - yolo_layer_1_loss: 3.3614 - yolo_layer_2_loss: 4.0767 - yolo_layer_3_loss: 5.1488
+ 33/108 [========>.....................] - ETA: 7:03 - loss: 12.6010 - yolo_layer_1_loss: 3.3613 - yolo_layer_2_loss: 4.0318 - yolo_layer_3_loss: 5.2079
+ 34/108 [========>.....................] - ETA: 6:54 - loss: 12.7360 - yolo_layer_1_loss: 3.4210 - yolo_layer_2_loss: 4.0427 - yolo_layer_3_loss: 5.2724
+ 35/108 [========>.....................] - ETA: 6:45 - loss: 12.6840 - yolo_layer_1_loss: 3.3991 - yolo_layer_2_loss: 4.0183 - yolo_layer_3_loss: 5.2666resizing:  448 448
+resizing:  448 448
+
+ 36/108 [=========>....................] - ETA: 6:37 - loss: 12.6874 - yolo_layer_1_loss: 3.3913 - yolo_layer_2_loss: 4.0168 - yolo_layer_3_loss: 5.2793
+ 37/108 [=========>....................] - ETA: 6:28 - loss: 12.9020 - yolo_layer_1_loss: 3.4515 - yolo_layer_2_loss: 4.1175 - yolo_layer_3_loss: 5.3331
+ 38/108 [=========>....................] - ETA: 6:20 - loss: 12.8715 - yolo_layer_1_loss: 3.4277 - yolo_layer_2_loss: 4.1455 - yolo_layer_3_loss: 5.2983
+ 39/108 [=========>....................] - ETA: 6:12 - loss: 12.7994 - yolo_layer_1_loss: 3.3952 - yolo_layer_2_loss: 4.1021 - yolo_layer_3_loss: 5.3021resizing:  352 352
+
+ 40/108 [==========>...................] - ETA: 6:05 - loss: 12.7252 - yolo_layer_1_loss: 3.3597 - yolo_layer_2_loss: 4.0707 - yolo_layer_3_loss: 5.2949
+ 41/108 [==========>...................] - ETA: 5:57 - loss: 12.6630 - yolo_layer_1_loss: 3.3295 - yolo_layer_2_loss: 4.0413 - yolo_layer_3_loss: 5.2922
+ 42/108 [==========>...................] - ETA: 5:53 - loss: 12.6271 - yolo_layer_1_loss: 3.3170 - yolo_layer_2_loss: 4.0274 - yolo_layer_3_loss: 5.2827
+ 43/108 [==========>...................] - ETA: 5:48 - loss: 12.5690 - yolo_layer_1_loss: 3.3143 - yolo_layer_2_loss: 4.0352 - yolo_layer_3_loss: 5.2196
+ 44/108 [===========>..................] - ETA: 5:43 - loss: 12.5373 - yolo_layer_1_loss: 3.3372 - yolo_layer_2_loss: 4.0079 - yolo_layer_3_loss: 5.1922
+ 45/108 [===========>..................] - ETA: 5:38 - loss: 12.5469 - yolo_layer_1_loss: 3.3357 - yolo_layer_2_loss: 3.9940 - yolo_layer_3_loss: 5.2172
+ 46/108 [===========>..................] - ETA: 5:33 - loss: 12.5359 - yolo_layer_1_loss: 3.3239 - yolo_layer_2_loss: 3.9650 - yolo_layer_3_loss: 5.2470
+ 47/108 [============>.................] - ETA: 5:28 - loss: 12.6361 - yolo_layer_1_loss: 3.3644 - yolo_layer_2_loss: 4.0095 - yolo_layer_3_loss: 5.2623
+ 48/108 [============>.................] - ETA: 5:23 - loss: 12.6326 - yolo_layer_1_loss: 3.3669 - yolo_layer_2_loss: 3.9848 - yolo_layer_3_loss: 5.2808
+ 49/108 [============>.................] - ETA: 5:16 - loss: 12.6584 - yolo_layer_1_loss: 3.3518 - yolo_layer_2_loss: 3.9703 - yolo_layer_3_loss: 5.3363
+ 50/108 [============>.................] - ETA: 5:09 - loss: 12.7239 - yolo_layer_1_loss: 3.3903 - yolo_layer_2_loss: 3.9812 - yolo_layer_3_loss: 5.3524resizing:  448 448
+
+ 51/108 [=============>................] - ETA: 5:02 - loss: 12.7387 - yolo_layer_1_loss: 3.3688 - yolo_layer_2_loss: 3.9954 - yolo_layer_3_loss: 5.3744
+ 52/108 [=============>................] - ETA: 4:56 - loss: 12.7031 - yolo_layer_1_loss: 3.3512 - yolo_layer_2_loss: 3.9866 - yolo_layer_3_loss: 5.3653
+ 53/108 [=============>................] - ETA: 4:49 - loss: 12.7185 - yolo_layer_1_loss: 3.3429 - yolo_layer_2_loss: 3.9913 - yolo_layer_3_loss: 5.3843
+ 54/108 [==============>...............] - ETA: 4:43 - loss: 12.7835 - yolo_layer_1_loss: 3.3744 - yolo_layer_2_loss: 3.9745 - yolo_layer_3_loss: 5.4347
+ 55/108 [==============>...............] - ETA: 4:36 - loss: 12.7954 - yolo_layer_1_loss: 3.3485 - yolo_layer_2_loss: 3.9894 - yolo_layer_3_loss: 5.4575
+ 56/108 [==============>...............] - ETA: 4:30 - loss: 12.7595 - yolo_layer_1_loss: 3.3451 - yolo_layer_2_loss: 3.9785 - yolo_layer_3_loss: 5.4360
+ 57/108 [==============>...............] - ETA: 4:24 - loss: 12.7912 - yolo_layer_1_loss: 3.3862 - yolo_layer_2_loss: 3.9666 - yolo_layer_3_loss: 5.4383
+ 58/108 [===============>..............] - ETA: 4:18 - loss: 12.7605 - yolo_layer_1_loss: 3.3639 - yolo_layer_2_loss: 3.9447 - yolo_layer_3_loss: 5.4520
+ 59/108 [===============>..............] - ETA: 4:11 - loss: 12.7031 - yolo_layer_1_loss: 3.3287 - yolo_layer_2_loss: 3.9243 - yolo_layer_3_loss: 5.4501
+ 60/108 [===============>..............] - ETA: 4:07 - loss: 12.7938 - yolo_layer_1_loss: 3.3707 - yolo_layer_2_loss: 3.9673 - yolo_layer_3_loss: 5.4558
+ 61/108 [===============>..............] - ETA: 4:02 - loss: 12.8362 - yolo_layer_1_loss: 3.4220 - yolo_layer_2_loss: 3.9621 - yolo_layer_3_loss: 5.4521
+ 62/108 [================>.............] - ETA: 3:58 - loss: 12.8140 - yolo_layer_1_loss: 3.4160 - yolo_layer_2_loss: 3.9557 - yolo_layer_3_loss: 5.4423
+ 63/108 [================>.............] - ETA: 3:53 - loss: 12.8113 - yolo_layer_1_loss: 3.4081 - yolo_layer_2_loss: 3.9493 - yolo_layer_3_loss: 5.4539
+ 64/108 [================>.............] - ETA: 3:48 - loss: 12.8568 - yolo_layer_1_loss: 3.4438 - yolo_layer_2_loss: 3.9519 - yolo_layer_3_loss: 5.4611
+ 65/108 [=================>............] - ETA: 3:43 - loss: 12.8505 - yolo_layer_1_loss: 3.4277 - yolo_layer_2_loss: 3.9447 - yolo_layer_3_loss: 5.4781
+ 66/108 [=================>............] - ETA: 3:39 - loss: 12.8708 - yolo_layer_1_loss: 3.4186 - yolo_layer_2_loss: 3.9723 - yolo_layer_3_loss: 5.4799
+ 67/108 [=================>............] - ETA: 3:34 - loss: 12.8814 - yolo_layer_1_loss: 3.4424 - yolo_layer_2_loss: 3.9623 - yolo_layer_3_loss: 5.4767
+ 68/108 [=================>............] - ETA: 3:29 - loss: 12.8511 - yolo_layer_1_loss: 3.4251 - yolo_layer_2_loss: 3.9575 - yolo_layer_3_loss: 5.4685
+ 69/108 [==================>...........] - ETA: 3:24 - loss: 12.7972 - yolo_layer_1_loss: 3.4184 - yolo_layer_2_loss: 3.9454 - yolo_layer_3_loss: 5.4334
+ 70/108 [==================>...........] - ETA: 3:19 - loss: 12.9097 - yolo_layer_1_loss: 3.4950 - yolo_layer_2_loss: 3.9482 - yolo_layer_3_loss: 5.4665
+ 71/108 [==================>...........] - ETA: 3:14 - loss: 12.9311 - yolo_layer_1_loss: 3.5047 - yolo_layer_2_loss: 3.9347 - yolo_layer_3_loss: 5.4916resizing:  480 480
+
+ 72/108 [===================>..........] - ETA: 3:09 - loss: 12.9698 - yolo_layer_1_loss: 3.4964 - yolo_layer_2_loss: 3.9425 - yolo_layer_3_loss: 5.5309
+ 73/108 [===================>..........] - ETA: 3:04 - loss: 12.9805 - yolo_layer_1_loss: 3.4957 - yolo_layer_2_loss: 3.9678 - yolo_layer_3_loss: 5.5170
+ 74/108 [===================>..........] - ETA: 2:59 - loss: 12.9534 - yolo_layer_1_loss: 3.4747 - yolo_layer_2_loss: 3.9659 - yolo_layer_3_loss: 5.5128
+ 75/108 [===================>..........] - ETA: 2:54 - loss: 12.9321 - yolo_layer_1_loss: 3.4895 - yolo_layer_2_loss: 3.9533 - yolo_layer_3_loss: 5.4893
+ 76/108 [====================>.........] - ETA: 2:49 - loss: 12.9182 - yolo_layer_1_loss: 3.4759 - yolo_layer_2_loss: 3.9413 - yolo_layer_3_loss: 5.5010
+ 77/108 [====================>.........] - ETA: 2:44 - loss: 12.8963 - yolo_layer_1_loss: 3.4745 - yolo_layer_2_loss: 3.9455 - yolo_layer_3_loss: 5.4763
+ 78/108 [====================>.........] - ETA: 2:39 - loss: 12.9257 - yolo_layer_1_loss: 3.4755 - yolo_layer_2_loss: 3.9946 - yolo_layer_3_loss: 5.4556
+ 79/108 [====================>.........] - ETA: 2:34 - loss: 12.9216 - yolo_layer_1_loss: 3.4764 - yolo_layer_2_loss: 3.9964 - yolo_layer_3_loss: 5.4488
+ 80/108 [=====================>........] - ETA: 2:28 - loss: 12.9541 - yolo_layer_1_loss: 3.5135 - yolo_layer_2_loss: 4.0061 - yolo_layer_3_loss: 5.4345
+ 81/108 [=====================>........] - ETA: 2:23 - loss: 12.9520 - yolo_layer_1_loss: 3.5210 - yolo_layer_2_loss: 4.0021 - yolo_layer_3_loss: 5.4288
+ 82/108 [=====================>........] - ETA: 2:18 - loss: 12.9580 - yolo_layer_1_loss: 3.5423 - yolo_layer_2_loss: 4.0035 - yolo_layer_3_loss: 5.4122
+ 83/108 [======================>.......] - ETA: 2:13 - loss: 12.9843 - yolo_layer_1_loss: 3.5369 - yolo_layer_2_loss: 4.0038 - yolo_layer_3_loss: 5.4436
+ 84/108 [======================>.......] - ETA: 2:08 - loss: 13.0135 - yolo_layer_1_loss: 3.5483 - yolo_layer_2_loss: 4.0122 - yolo_layer_3_loss: 5.4530
+ 85/108 [======================>.......] - ETA: 2:03 - loss: 13.0012 - yolo_layer_1_loss: 3.5639 - yolo_layer_2_loss: 4.0123 - yolo_layer_3_loss: 5.4250resizing:  448 448
+
+ 86/108 [======================>.......] - ETA: 1:58 - loss: 13.0172 - yolo_layer_1_loss: 3.5576 - yolo_layer_2_loss: 4.0054 - yolo_layer_3_loss: 5.4542resizing:  448 448
+
+ 87/108 [=======================>......] - ETA: 1:53 - loss: 13.0285 - yolo_layer_1_loss: 3.5569 - yolo_layer_2_loss: 4.0179 - yolo_layer_3_loss: 5.4536
+ 88/108 [=======================>......] - ETA: 1:48 - loss: 13.0231 - yolo_layer_1_loss: 3.5610 - yolo_layer_2_loss: 4.0270 - yolo_layer_3_loss: 5.4350
+ 89/108 [=======================>......] - ETA: 1:43 - loss: 13.0741 - yolo_layer_1_loss: 3.5887 - yolo_layer_2_loss: 4.0281 - yolo_layer_3_loss: 5.4574
+ 90/108 [========================>.....] - ETA: 1:38 - loss: 13.0766 - yolo_layer_1_loss: 3.5888 - yolo_layer_2_loss: 4.0296 - yolo_layer_3_loss: 5.4582
+ 91/108 [========================>.....] - ETA: 1:32 - loss: 13.0542 - yolo_layer_1_loss: 3.5845 - yolo_layer_2_loss: 4.0246 - yolo_layer_3_loss: 5.4451
+ 92/108 [========================>.....] - ETA: 1:27 - loss: 13.0669 - yolo_layer_1_loss: 3.5924 - yolo_layer_2_loss: 4.0404 - yolo_layer_3_loss: 5.4341
+ 93/108 [========================>.....] - ETA: 1:22 - loss: 13.0919 - yolo_layer_1_loss: 3.5894 - yolo_layer_2_loss: 4.0684 - yolo_layer_3_loss: 5.4341resizing:  288 288
+
+ 94/108 [=========================>....] - ETA: 1:16 - loss: 13.1090 - yolo_layer_1_loss: 3.5734 - yolo_layer_2_loss: 4.0856 - yolo_layer_3_loss: 5.4500
+ 95/108 [=========================>....] - ETA: 1:11 - loss: 13.1323 - yolo_layer_1_loss: 3.5758 - yolo_layer_2_loss: 4.1185 - yolo_layer_3_loss: 5.4380
+ 96/108 [=========================>....] - ETA: 1:06 - loss: 13.1533 - yolo_layer_1_loss: 3.5695 - yolo_layer_2_loss: 4.1179 - yolo_layer_3_loss: 5.4659
+ 97/108 [=========================>....] - ETA: 1:00 - loss: 13.1482 - yolo_layer_1_loss: 3.5646 - yolo_layer_2_loss: 4.1246 - yolo_layer_3_loss: 5.4590
+ 98/108 [==========================>...] - ETA: 55s - loss: 13.1896 - yolo_layer_1_loss: 3.5732 - yolo_layer_2_loss: 4.1176 - yolo_layer_3_loss: 5.4987 
+ 99/108 [==========================>...] - ETA: 49s - loss: 13.1428 - yolo_layer_1_loss: 3.5609 - yolo_layer_2_loss: 4.0970 - yolo_layer_3_loss: 5.4849
+100/108 [==========================>...] - ETA: 44s - loss: 13.2196 - yolo_layer_1_loss: 3.5793 - yolo_layer_2_loss: 4.1253 - yolo_layer_3_loss: 5.5149
+101/108 [===========================>..] - ETA: 38s - loss: 13.2061 - yolo_layer_1_loss: 3.5679 - yolo_layer_2_loss: 4.1112 - yolo_layer_3_loss: 5.5270
+102/108 [===========================>..] - ETA: 33s - loss: 13.1901 - yolo_layer_1_loss: 3.5802 - yolo_layer_2_loss: 4.1020 - yolo_layer_3_loss: 5.5079
+103/108 [===========================>..] - ETA: 27s - loss: 13.2092 - yolo_layer_1_loss: 3.5900 - yolo_layer_2_loss: 4.1002 - yolo_layer_3_loss: 5.5191
+104/108 [===========================>..] - ETA: 21s - loss: 13.1980 - yolo_layer_1_loss: 3.5678 - yolo_layer_2_loss: 4.1029 - yolo_layer_3_loss: 5.5273
+105/108 [============================>.] - ETA: 16s - loss: 13.2022 - yolo_layer_1_loss: 3.5639 - yolo_layer_2_loss: 4.0935 - yolo_layer_3_loss: 5.5449
+106/108 [============================>.] - ETA: 10s - loss: 13.1832 - yolo_layer_1_loss: 3.5393 - yolo_layer_2_loss: 4.0774 - yolo_layer_3_loss: 5.5666
+107/108 [============================>.] - ETA: 5s - loss: 13.1856 - yolo_layer_1_loss: 3.5377 - yolo_layer_2_loss: 4.0686 - yolo_layer_3_loss: 5.5794 
+108/108 [==============================] - 583s 5s/step - loss: 13.1765 - yolo_layer_1_loss: 3.5232 - yolo_layer_2_loss: 4.0734 - yolo_layer_3_loss: 5.5799
+
+Epoch 00006: loss did not improve from 13.00647
+Epoch 00006: early stopping
+person: 0.7672
+mAP: 0.7672
+Done!

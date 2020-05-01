@@ -1,0 +1,9 @@
+#PBS -N 20_20_20.pbs
+#PBS -l select=1:ncpus=40:mem=370gb:ngpus=2:gpu_model=v100,walltime=72:00:00 -q fthpc
+
+
+source activate tf_gpu
+cd
+cd heath_copy
+python train_step_by_step.py
+
