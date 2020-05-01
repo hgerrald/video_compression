@@ -63,11 +63,11 @@ height_3 = height_2 * 2
 
 # Compress the top of the image
 dArray_top = createFloatArray(0, height_2, 0, width, pix_vals)
-dc1 = performCompression(8, dArray_top, 0, height_2, 0, width)
+dc1 = performCompression(3, dArray_top, 0, height_2, 0, width)
 
 # Compress the second layer
 dArray_middle = createFloatArray(height_2, height_3 ,0, width, pix_vals)
-dc2 = performCompression(20, dArray_middle, height_2, height_3, 0, width)
+dc2 = performCompression(30, dArray_middle, height_2, height_3, 0, width)
 
 # Compress the bottom of the image
 dArray_bottom = createFloatArray(height_3, height, 0, width, pix_vals)
@@ -80,4 +80,4 @@ result_mid = pressio.io_data_to_numpy(dc2)
 result_2 = pressio.io_data_to_numpy(dc3)
 final = np.vstack((result, result_mid, result_2))
 newImage = Image.fromarray((final).astype(np.uint8),'RGB')
-newImage.save("output" + "0" + ".jpeg","JPEG")
+newImage.save("results/image" + str(sys.argv[1]) + ".jpg","JPEG")
