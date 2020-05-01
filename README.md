@@ -14,3 +14,5 @@ Quick summary of what each file / directory is:
 To run an image set through Palmetto you must configure an Anaconda environment with Tensorflow and Jupyterhub. I have the environment I used saved on Google Drive, but the folder is to big to upload to GitHub. It is called tf_gpu and is why I activate tf_gpu in my pbs scripts.
 
 After everything is configured, you can create a pbs script similar to some of my own and submit it using qsub. You must go and change the config.json file to run the correct image set before submitting this job.
+
+The conda environment should be saved in /home/<username>/.conda/envs/
